@@ -1,0 +1,2790 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.1.1 (Python 3.6.3 on win32)" generated="20200809 23:09:56.446" rpa="false">
+<suite id="s1" name="TF0001" source="C:\Users\Viden\PycharmProjects\Trifecta\Tests\TF0001.robot">
+<test id="s1-t1" name="TestCase01">
+<kw name="Start Automation Setup" library="Trifecta_Keywords" type="setup">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${url}</arg>
+<arg>${Browser}</arg>
+</arguments>
+<msg timestamp="20200809 23:09:56.680" level="INFO">Opening browser 'chrome' to base url 'https://phptravels.net/login'.</msg>
+<status status="PASS" starttime="20200809 23:09:56.680" endtime="20200809 23:10:00.664"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20200809 23:10:00.664" endtime="20200809 23:10:02.798"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on current page.</doc>
+<arguments>
+<arg>Login</arg>
+</arguments>
+<status status="PASS" starttime="20200809 23:10:02.798" endtime="20200809 23:10:02.818"></status>
+</kw>
+<status status="PASS" starttime="20200809 23:09:56.679" endtime="20200809 23:10:02.818"></status>
+</kw>
+<kw name="Login" library="Trifecta_Keywords">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${id_user_name}</arg>
+<arg>${data_user_name}</arg>
+</arguments>
+<msg timestamp="20200809 23:10:02.820" level="INFO">Typing text 'user@phptravels.com' into text field 'name=username'.</msg>
+<status status="PASS" starttime="20200809 23:10:02.820" endtime="20200809 23:10:03.038"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${id_password}</arg>
+<arg>${data_password}</arg>
+</arguments>
+<msg timestamp="20200809 23:10:03.039" level="INFO">Typing text 'demouser' into text field 'name=password'.</msg>
+<status status="PASS" starttime="20200809 23:10:03.038" endtime="20200809 23:10:03.185"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>${login_button}</arg>
+</arguments>
+<msg timestamp="20200809 23:10:03.186" level="INFO">Clicking button 'css=.btn-lg'.</msg>
+<status status="PASS" starttime="20200809 23:10:03.185" endtime="20200809 23:10:03.279"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on current page.</doc>
+<arguments>
+<arg>${assert_login_success}</arg>
+</arguments>
+<status status="PASS" starttime="20200809 23:10:03.280" endtime="20200809 23:10:03.681"></status>
+</kw>
+<status status="PASS" starttime="20200809 23:10:02.819" endtime="20200809 23:10:03.681"></status>
+</kw>
+<kw name="Home Page" library="Trifecta_Keywords">
+<kw name="Click Link" library="SeleniumLibrary">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>${home_page_button}</arg>
+</arguments>
+<msg timestamp="20200809 23:10:03.681" level="INFO">Clicking link 'css=.main-nav-menu &gt; .main-nav:nth-child(1) a'.</msg>
+<status status="PASS" starttime="20200809 23:10:03.681" endtime="20200809 23:10:03.815"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on current page.</doc>
+<arguments>
+<arg>Flights</arg>
+</arguments>
+<status status="PASS" starttime="20200809 23:10:03.815" endtime="20200809 23:10:06.597"></status>
+</kw>
+<status status="PASS" starttime="20200809 23:10:03.681" endtime="20200809 23:10:06.597"></status>
+</kw>
+<kw name="Flight Page" library="Trifecta_Keywords">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${flights_button}</arg>
+</arguments>
+<msg timestamp="20200809 23:10:06.599" level="INFO">Clicking element 'css=.flights'.</msg>
+<status status="PASS" starttime="20200809 23:10:06.598" endtime="20200809 23:10:06.691"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${twoway_radio}</arg>
+</arguments>
+<msg timestamp="20200809 23:10:06.692" level="INFO">Clicking element 'css=.custom-control:nth-child(2) &gt; .custom-control-label'.</msg>
+<status status="PASS" starttime="20200809 23:10:06.692" endtime="20200809 23:10:06.875"></status>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<doc>Simulates user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>None</arg>
+<arg>TAB</arg>
+</arguments>
+<msg timestamp="20200809 23:10:06.877" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg timestamp="20200809 23:10:06.877" level="INFO">Pressing special key TAB to browser.</msg>
+<status status="PASS" starttime="20200809 23:10:06.876" endtime="20200809 23:10:06.890"></status>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<doc>Simulates user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>None</arg>
+<arg>LAX</arg>
+</arguments>
+<msg timestamp="20200809 23:10:06.891" level="INFO">Sending key(s) ('LAX',) to page.</msg>
+<msg timestamp="20200809 23:10:06.891" level="INFO">Sending keys LAX</msg>
+<status status="PASS" starttime="20200809 23:10:06.890" endtime="20200809 23:10:06.948"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1s</arg>
+</arguments>
+<msg timestamp="20200809 23:10:07.950" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20200809 23:10:06.948" endtime="20200809 23:10:07.950"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>${flight_from}</arg>
+</arguments>
+<status status="PASS" starttime="20200809 23:10:07.950" endtime="20200809 23:10:07.962"></status>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<doc>Simulates user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>None</arg>
+<arg>TAB</arg>
+</arguments>
+<msg timestamp="20200809 23:10:07.963" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg timestamp="20200809 23:10:07.963" level="INFO">Pressing special key TAB to browser.</msg>
+<status status="PASS" starttime="20200809 23:10:07.962" endtime="20200809 23:10:07.993"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1s</arg>
+</arguments>
+<msg timestamp="20200809 23:10:08.994" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20200809 23:10:07.993" endtime="20200809 23:10:08.994"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>${flight_to}</arg>
+</arguments>
+<status status="PASS" starttime="20200809 23:10:08.994" endtime="20200809 23:10:09.005"></status>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<doc>Simulates user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>None</arg>
+<arg>LHR</arg>
+</arguments>
+<msg timestamp="20200809 23:10:09.006" level="INFO">Sending key(s) ('LHR',) to page.</msg>
+<msg timestamp="20200809 23:10:09.006" level="INFO">Sending keys LHR</msg>
+<status status="PASS" starttime="20200809 23:10:09.005" endtime="20200809 23:10:09.054"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1s</arg>
+</arguments>
+<msg timestamp="20200809 23:10:10.056" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20200809 23:10:09.055" endtime="20200809 23:10:10.056"></status>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<doc>Simulates user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>None</arg>
+<arg>TAB</arg>
+</arguments>
+<msg timestamp="20200809 23:10:10.057" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg timestamp="20200809 23:10:10.057" level="INFO">Pressing special key TAB to browser.</msg>
+<status status="PASS" starttime="20200809 23:10:10.056" endtime="20200809 23:10:10.090"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1s</arg>
+</arguments>
+<msg timestamp="20200809 23:10:11.092" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20200809 23:10:10.090" endtime="20200809 23:10:11.092"></status>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<doc>Simulates user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>None</arg>
+<arg>ARROW_DOWN</arg>
+</arguments>
+<msg timestamp="20200809 23:10:11.093" level="INFO">Sending key(s) ('ARROW_DOWN',) to page.</msg>
+<msg timestamp="20200809 23:10:11.093" level="INFO">Pressing special key ARROW_DOWN to browser.</msg>
+<status status="PASS" starttime="20200809 23:10:11.092" endtime="20200809 23:10:11.113"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1s</arg>
+</arguments>
+<msg timestamp="20200809 23:10:12.114" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20200809 23:10:11.114" endtime="20200809 23:10:12.114"></status>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<doc>Simulates user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>None</arg>
+<arg>ENTER</arg>
+</arguments>
+<msg timestamp="20200809 23:10:12.116" level="INFO">Sending key(s) ('ENTER',) to page.</msg>
+<msg timestamp="20200809 23:10:12.116" level="INFO">Pressing special key ENTER to browser.</msg>
+<status status="PASS" starttime="20200809 23:10:12.115" endtime="20200809 23:10:30.835"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1s</arg>
+</arguments>
+<msg timestamp="20200809 23:10:31.837" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20200809 23:10:30.835" endtime="20200809 23:10:31.837"></status>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<doc>Simulates user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>None</arg>
+<arg>ARROW_DOWN</arg>
+</arguments>
+<msg timestamp="20200809 23:10:31.838" level="INFO">Sending key(s) ('ARROW_DOWN',) to page.</msg>
+<msg timestamp="20200809 23:10:31.838" level="INFO">Pressing special key ARROW_DOWN to browser.</msg>
+<status status="PASS" starttime="20200809 23:10:31.837" endtime="20200809 23:10:31.846"></status>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<doc>Simulates user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>None</arg>
+<arg>ARROW_DOWN</arg>
+</arguments>
+<msg timestamp="20200809 23:10:31.847" level="INFO">Sending key(s) ('ARROW_DOWN',) to page.</msg>
+<msg timestamp="20200809 23:10:31.847" level="INFO">Pressing special key ARROW_DOWN to browser.</msg>
+<status status="PASS" starttime="20200809 23:10:31.846" endtime="20200809 23:10:31.854"></status>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<doc>Simulates user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>None</arg>
+<arg>ENTER</arg>
+</arguments>
+<msg timestamp="20200809 23:10:31.855" level="INFO">Sending key(s) ('ENTER',) to page.</msg>
+<msg timestamp="20200809 23:10:31.856" level="INFO">Pressing special key ENTER to browser.</msg>
+<status status="PASS" starttime="20200809 23:10:31.855" endtime="20200809 23:10:31.865"></status>
+</kw>
+<status status="PASS" starttime="20200809 23:10:06.598" endtime="20200809 23:10:31.865"></status>
+</kw>
+<kw name="Assert Search Result" library="Trifecta_Keywords">
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of element identified by ``locator``.</doc>
+<arguments>
+<arg>${flight_result_01}</arg>
+</arguments>
+<assign>
+<var>${flight_search_result}</var>
+</assign>
+<msg timestamp="20200809 23:10:31.933" level="INFO">${flight_search_result} = 0 Total listings found</msg>
+<status status="PASS" starttime="20200809 23:10:31.866" endtime="20200809 23:10:31.933"></status>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<arguments>
+<arg>${flight_search_result}</arg>
+<arg>${expected_result_flight_search}</arg>
+</arguments>
+<status status="PASS" starttime="20200809 23:10:31.933" endtime="20200809 23:10:31.933"></status>
+</kw>
+<status status="PASS" starttime="20200809 23:10:31.865" endtime="20200809 23:10:31.933"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="teardown">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20200809 23:10:31.934" endtime="20200809 23:10:34.077"></status>
+</kw>
+<tags>
+<tag>Regression</tag>
+</tags>
+<status status="PASS" starttime="20200809 23:09:56.679" endtime="20200809 23:10:34.077" critical="yes"></status>
+</test>
+<test id="s1-t2" name="TestCase02">
+<kw name="Start Automation Setup" library="Trifecta_Keywords" type="setup">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${url}</arg>
+<arg>${Browser}</arg>
+</arguments>
+<msg timestamp="20200809 23:10:34.080" level="INFO">Opening browser 'chrome' to base url 'https://phptravels.net/login'.</msg>
+<status status="PASS" starttime="20200809 23:10:34.080" endtime="20200809 23:10:37.895"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20200809 23:10:37.895" endtime="20200809 23:10:40.026"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on current page.</doc>
+<arguments>
+<arg>Login</arg>
+</arguments>
+<status status="PASS" starttime="20200809 23:10:40.026" endtime="20200809 23:10:40.048"></status>
+</kw>
+<status status="PASS" starttime="20200809 23:10:34.080" endtime="20200809 23:10:40.049"></status>
+</kw>
+<kw name="Login" library="Trifecta_Keywords">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${id_user_name}</arg>
+<arg>${data_user_name}</arg>
+</arguments>
+<msg timestamp="20200809 23:10:40.050" level="INFO">Typing text 'user@phptravels.com' into text field 'name=username'.</msg>
+<status status="PASS" starttime="20200809 23:10:40.049" endtime="20200809 23:10:40.253"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${id_password}</arg>
+<arg>${data_password}</arg>
+</arguments>
+<msg timestamp="20200809 23:10:40.253" level="INFO">Typing text 'demouser' into text field 'name=password'.</msg>
+<status status="PASS" starttime="20200809 23:10:40.253" endtime="20200809 23:10:40.382"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>${login_button}</arg>
+</arguments>
+<msg timestamp="20200809 23:10:40.382" level="INFO">Clicking button 'css=.btn-lg'.</msg>
+<status status="PASS" starttime="20200809 23:10:40.382" endtime="20200809 23:10:40.482"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on current page.</doc>
+<arguments>
+<arg>${assert_login_success}</arg>
+</arguments>
+<status status="PASS" starttime="20200809 23:10:40.482" endtime="20200809 23:10:40.878"></status>
+</kw>
+<status status="PASS" starttime="20200809 23:10:40.049" endtime="20200809 23:10:40.878"></status>
+</kw>
+<kw name="Home Page" library="Trifecta_Keywords">
+<kw name="Click Link" library="SeleniumLibrary">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>${home_page_button}</arg>
+</arguments>
+<msg timestamp="20200809 23:10:40.879" level="INFO">Clicking link 'css=.main-nav-menu &gt; .main-nav:nth-child(1) a'.</msg>
+<status status="PASS" starttime="20200809 23:10:40.879" endtime="20200809 23:10:41.021"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on current page.</doc>
+<arguments>
+<arg>Flights</arg>
+</arguments>
+<status status="PASS" starttime="20200809 23:10:41.021" endtime="20200809 23:10:43.882"></status>
+</kw>
+<status status="PASS" starttime="20200809 23:10:40.878" endtime="20200809 23:10:43.882"></status>
+</kw>
+<kw name="Visa Page" library="Trifecta_Keywords">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1s</arg>
+</arguments>
+<msg timestamp="20200809 23:10:44.885" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20200809 23:10:43.883" endtime="20200809 23:10:44.885"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${visa_button}</arg>
+</arguments>
+<msg timestamp="20200809 23:10:44.885" level="INFO">Clicking element 'css=.visa'.</msg>
+<status status="PASS" starttime="20200809 23:10:44.885" endtime="20200809 23:10:44.971"></status>
+</kw>
+<status status="PASS" starttime="20200809 23:10:43.882" endtime="20200809 23:10:44.971"></status>
+</kw>
+<kw name="Visa Selection" library="Trifecta_Keywords">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//div[@id='visa']/div/div/form/div/div/div/div/div[2]/div/a/div</arg>
+</arguments>
+<msg timestamp="20200809 23:10:44.972" level="INFO">Clicking element 'xpath=//div[@id='visa']/div/div/form/div/div/div/div/div[2]/div/a/div'.</msg>
+<status status="PASS" starttime="20200809 23:10:44.971" endtime="20200809 23:10:45.211"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//div[@id='visa']/div/div/form/div/div/div/div/div[2]/div/div/ul/li[21]</arg>
+</arguments>
+<msg timestamp="20200809 23:10:45.212" level="INFO">Clicking element 'xpath=//div[@id='visa']/div/div/form/div/div/div/div/div[2]/div/div/ul/li[21]'.</msg>
+<status status="PASS" starttime="20200809 23:10:45.212" endtime="20200809 23:10:45.338"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//div[@id='visa']/div/div/form/div/div/div[2]/div/div[2]/div/a/div</arg>
+</arguments>
+<msg timestamp="20200809 23:10:45.338" level="INFO">Clicking element 'xpath=//div[@id='visa']/div/div/form/div/div/div[2]/div/div[2]/div/a/div'.</msg>
+<status status="PASS" starttime="20200809 23:10:45.338" endtime="20200809 23:10:45.455"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//div[@id='visa']/div/div/form/div/div/div[2]/div/div[2]/div/div/ul/li[28]</arg>
+</arguments>
+<msg timestamp="20200809 23:10:45.455" level="INFO">Clicking element 'xpath=//div[@id='visa']/div/div/form/div/div/div[2]/div/div[2]/div/div/ul/li[28]'.</msg>
+<status status="PASS" starttime="20200809 23:10:45.455" endtime="20200809 23:10:45.545"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>500ms</arg>
+</arguments>
+<msg timestamp="20200809 23:10:46.047" level="INFO">Slept 500 milliseconds</msg>
+<status status="PASS" starttime="20200809 23:10:45.545" endtime="20200809 23:10:46.047"></status>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<doc>Simulates user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>None</arg>
+<arg>TAB</arg>
+</arguments>
+<msg timestamp="20200809 23:10:46.048" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg timestamp="20200809 23:10:46.048" level="INFO">Pressing special key TAB to browser.</msg>
+<status status="PASS" starttime="20200809 23:10:46.047" endtime="20200809 23:10:46.090"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>500ms</arg>
+</arguments>
+<msg timestamp="20200809 23:10:46.592" level="INFO">Slept 500 milliseconds</msg>
+<status status="PASS" starttime="20200809 23:10:46.090" endtime="20200809 23:10:46.592"></status>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<doc>Simulates user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>None</arg>
+<arg>ARROW_DOWN</arg>
+</arguments>
+<msg timestamp="20200809 23:10:46.593" level="INFO">Sending key(s) ('ARROW_DOWN',) to page.</msg>
+<msg timestamp="20200809 23:10:46.593" level="INFO">Pressing special key ARROW_DOWN to browser.</msg>
+<status status="PASS" starttime="20200809 23:10:46.592" endtime="20200809 23:10:46.614"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>300ms</arg>
+</arguments>
+<msg timestamp="20200809 23:10:46.917" level="INFO">Slept 300 milliseconds</msg>
+<status status="PASS" starttime="20200809 23:10:46.615" endtime="20200809 23:10:46.917"></status>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<doc>Simulates user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>None</arg>
+<arg>ENTER</arg>
+</arguments>
+<msg timestamp="20200809 23:10:46.918" level="INFO">Sending key(s) ('ENTER',) to page.</msg>
+<msg timestamp="20200809 23:10:46.918" level="INFO">Pressing special key ENTER to browser.</msg>
+<status status="PASS" starttime="20200809 23:10:46.917" endtime="20200809 23:10:46.940"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=(//button[@type='submit'])[7]</arg>
+</arguments>
+<msg timestamp="20200809 23:10:46.941" level="INFO">Clicking element 'xpath=(//button[@type='submit'])[7]'.</msg>
+<status status="PASS" starttime="20200809 23:10:46.940" endtime="20200809 23:10:47.394"></status>
+</kw>
+<status status="PASS" starttime="20200809 23:10:44.971" endtime="20200809 23:10:47.395"></status>
+</kw>
+<kw name="Fill The Form" library="Trifecta_Keywords">
+<kw name="Get CSV Data" library="Trifecta_Keywords">
+<arguments>
+<arg>${CSV_FILE_PATH_STORED_HERE}</arg>
+</arguments>
+<assign>
+<var>@{saverowsofdata}</var>
+</assign>
+<kw name="SG Csv File" library="Csv">
+<arguments>
+<arg>${FilePath}</arg>
+</arguments>
+<assign>
+<var>${Data}</var>
+</assign>
+<msg timestamp="20200809 23:10:47.396" level="INFO">[['Hannah', 'Jordan', 'orci@nibhPhasellus.ca', 'orci@nibhPhasellus.ca', '818-123-1234'], ['Boris', 'Dieter', 'montes.nascetur@ultriciesornare.com', 'montes.nascetur@ultriciesornare.com', '312-788-8373'], ['Urielle', 'Beck', 'Curabitur.dictum@dapibusligula.org', 'Curabitur.dictum@dapibusligula.org', '414-777-3210'], ['Lawrence', 'Jelani', 'fringilla@IntegermollisInteger.ca', 'fringilla@IntegermollisInteger.ca', '773-390-1540'], ['Shelly', 'Azalia', 'diam@vestibulumMaurismagna.co.uk', 'diam@vestibulumMaurismagna.co.uk', '323-897-4352'], ['Kaye', 'Joel', 'vitae@cursusluctusipsum.ca', 'vitae@cursusluctusipsum.ca', '773-872-0001'], ['Hoyt', 'Savannah', 'Phasellus@sollicitudin.edu', 'Phasellus@sollicitudin.edu', '416-684-2323'], ['Chava', 'Sybill', 'Duis.a.mi@consequat.co.uk', 'Duis.a.mi@consequat.co.uk', '563-999-0103'], ['Ferdinand', 'Jessica', 'gravida.sit.amet@elementum.co.uk', 'gravida.sit.amet@elementum.co.uk', '310-987-6789']]</msg>
+<msg timestamp="20200809 23:10:47.396" level="INFO">${Data} = [['Hannah', 'Jordan', 'orci@nibhPhasellus.ca', 'orci@nibhPhasellus.ca', '818-123-1234'], ['Boris', 'Dieter', 'montes.nascetur@ultriciesornare.com', 'montes.nascetur@ultriciesornare.com', '312-788-8373...</msg>
+<status status="PASS" starttime="20200809 23:10:47.396" endtime="20200809 23:10:47.396"></status>
+</kw>
+<msg timestamp="20200809 23:10:47.397" level="INFO">@{saverowsofdata} = [ ['Hannah', 'Jordan', 'orci@nibhPhasellus.ca', 'orci@nibhPhasellus.ca', '818-123-1234'] | ['Boris', 'Dieter', 'montes.nascetur@ultriciesornare.com', 'montes.nascetur@ultriciesornare.com', '312-788-83...</msg>
+<status status="PASS" starttime="20200809 23:10:47.395" endtime="20200809 23:10:47.397"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20200809 23:10:49.398" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200809 23:10:47.397" endtime="20200809 23:10:49.398"></status>
+</kw>
+<kw name="${singlerows} IN [ @{saverowsofdata} ]" type="for">
+<kw name="${singlerows} = ['Hannah', 'Jordan', 'orci@nibhPhasellus.ca', 'orci@nibhPhasellus.ca', '818-123-1234']" type="foritem">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${singlerows}</arg>
+</arguments>
+<msg timestamp="20200809 23:10:49.398" level="INFO">['Hannah', 'Jordan', 'orci@nibhPhasellus.ca', 'orci@nibhPhasellus.ca', '818-123-1234']</msg>
+<status status="PASS" starttime="20200809 23:10:49.398" endtime="20200809 23:10:49.399"></status>
+</kw>
+<kw name="Run Keyword And Continue On Failure" library="BuiltIn">
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<arguments>
+<arg>Input Text</arg>
+<arg>${first_name_location}</arg>
+<arg>${singlerows[0]}</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${first_name_location}</arg>
+<arg>${singlerows[0]}</arg>
+</arguments>
+<msg timestamp="20200809 23:10:49.399" level="INFO">Typing text 'Hannah' into text field 'xpath=//input[@name='first_name']'.</msg>
+<status status="PASS" starttime="20200809 23:10:49.399" endtime="20200809 23:10:49.524"></status>
+</kw>
+<status status="PASS" starttime="20200809 23:10:49.399" endtime="20200809 23:10:49.524"></status>
+</kw>
+<kw name="Run Keyword And Continue On Failure" library="BuiltIn">
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<arguments>
+<arg>Input Text</arg>
+<arg>${last_name_location}</arg>
+<arg>${singlerows[1]}</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${last_name_location}</arg>
+<arg>${singlerows[1]}</arg>
+</arguments>
+<msg timestamp="20200809 23:10:49.525" level="INFO">Typing text 'Jordan' into text field 'xpath=//input[@name='last_name']'.</msg>
+<status status="PASS" starttime="20200809 23:10:49.525" endtime="20200809 23:10:49.667"></status>
+</kw>
+<status status="PASS" starttime="20200809 23:10:49.524" endtime="20200809 23:10:49.667"></status>
+</kw>
+<kw name="Run Keyword And Continue On Failure" library="BuiltIn">
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<arguments>
+<arg>Input Text</arg>
+<arg>${email1_location}</arg>
+<arg>${singlerows[2]}</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${email1_location}</arg>
+<arg>${singlerows[2]}</arg>
+</arguments>
+<msg timestamp="20200809 23:10:49.668" level="INFO">Typing text 'orci@nibhPhasellus.ca' into text field 'xpath=//input[@name='email']'.</msg>
+<status status="PASS" starttime="20200809 23:10:49.667" endtime="20200809 23:10:49.909"></status>
+</kw>
+<status status="PASS" starttime="20200809 23:10:49.667" endtime="20200809 23:10:49.909"></status>
+</kw>
+<kw name="Run Keyword And Continue On Failure" library="BuiltIn">
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<arguments>
+<arg>Input Text</arg>
+<arg>${email2_location}</arg>
+<arg>${singlerows[3]}</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${email2_location}</arg>
+<arg>${singlerows[3]}</arg>
+</arguments>
+<msg timestamp="20200809 23:10:49.910" level="INFO">Typing text 'orci@nibhPhasellus.ca' into text field 'xpath=//input[@name='confirmemail']'.</msg>
+<status status="PASS" starttime="20200809 23:10:49.910" endtime="20200809 23:10:50.168"></status>
+</kw>
+<status status="PASS" starttime="20200809 23:10:49.909" endtime="20200809 23:10:50.168"></status>
+</kw>
+<kw name="Run Keyword And Continue On Failure" library="BuiltIn">
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<arguments>
+<arg>Input Text</arg>
+<arg>${phone_location}</arg>
+<arg>${singlerows[4]}</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${phone_location}</arg>
+<arg>${singlerows[4]}</arg>
+</arguments>
+<msg timestamp="20200809 23:10:50.169" level="INFO">Typing text '818-123-1234' into text field 'xpath=//input[@name='phone']'.</msg>
+<status status="PASS" starttime="20200809 23:10:50.169" endtime="20200809 23:10:50.342"></status>
+</kw>
+<status status="PASS" starttime="20200809 23:10:50.168" endtime="20200809 23:10:50.343"></status>
+</kw>
+<kw name="Run Keyword And Continue On Failure" library="BuiltIn">
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<arguments>
+<arg>Click Element</arg>
+<arg>${booking_button}</arg>
+</arguments>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${booking_button}</arg>
+</arguments>
+<msg timestamp="20200809 23:10:50.344" level="INFO">Clicking element 'xpath=//button[@id='sub']'.</msg>
+<status status="PASS" starttime="20200809 23:10:50.343" endtime="20200809 23:10:50.971"></status>
+</kw>
+<status status="PASS" starttime="20200809 23:10:50.343" endtime="20200809 23:10:50.971"></status>
+</kw>
+<kw name="Run Keyword And Continue On Failure" library="BuiltIn">
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<arguments>
+<arg>Click Element</arg>
+<arg>${home_page_button}</arg>
+</arguments>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${home_page_button}</arg>
+</arguments>
+<msg timestamp="20200809 23:10:50.972" level="INFO">Clicking element 'css=.main-nav-menu &gt; .main-nav:nth-child(1) a'.</msg>
+<status status="PASS" starttime="20200809 23:10:50.971" endtime="20200809 23:10:51.084"></status>
+</kw>
+<status status="PASS" starttime="20200809 23:10:50.971" endtime="20200809 23:10:51.084"></status>
+</kw>
+<kw name="Visa Page" library="Trifecta_Keywords">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1s</arg>
+</arguments>
+<msg timestamp="20200809 23:10:52.086" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20200809 23:10:51.085" endtime="20200809 23:10:52.086"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${visa_button}</arg>
+</arguments>
+<msg timestamp="20200809 23:10:52.087" level="INFO">Clicking element 'css=.visa'.</msg>
+<status status="PASS" starttime="20200809 23:10:52.086" endtime="20200809 23:10:53.718"></status>
+</kw>
+<status status="PASS" starttime="20200809 23:10:51.084" endtime="20200809 23:10:53.718"></status>
+</kw>
+<kw name="Visa Selection" library="Trifecta_Keywords">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//div[@id='visa']/div/div/form/div/div/div/div/div[2]/div/a/div</arg>
+</arguments>
+<msg timestamp="20200809 23:10:53.720" level="INFO">Clicking element 'xpath=//div[@id='visa']/div/div/form/div/div/div/div/div[2]/div/a/div'.</msg>
+<status status="PASS" starttime="20200809 23:10:53.719" endtime="20200809 23:10:53.918"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//div[@id='visa']/div/div/form/div/div/div/div/div[2]/div/div/ul/li[21]</arg>
+</arguments>
+<msg timestamp="20200809 23:10:53.918" level="INFO">Clicking element 'xpath=//div[@id='visa']/div/div/form/div/div/div/div/div[2]/div/div/ul/li[21]'.</msg>
+<status status="PASS" starttime="20200809 23:10:53.918" endtime="20200809 23:10:54.037"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//div[@id='visa']/div/div/form/div/div/div[2]/div/div[2]/div/a/div</arg>
+</arguments>
+<msg timestamp="20200809 23:10:54.038" level="INFO">Clicking element 'xpath=//div[@id='visa']/div/div/form/div/div/div[2]/div/div[2]/div/a/div'.</msg>
+<status status="PASS" starttime="20200809 23:10:54.038" endtime="20200809 23:10:54.147"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//div[@id='visa']/div/div/form/div/div/div[2]/div/div[2]/div/div/ul/li[28]</arg>
+</arguments>
+<msg timestamp="20200809 23:10:54.147" level="INFO">Clicking element 'xpath=//div[@id='visa']/div/div/form/div/div/div[2]/div/div[2]/div/div/ul/li[28]'.</msg>
+<status status="PASS" starttime="20200809 23:10:54.147" endtime="20200809 23:10:54.226"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>500ms</arg>
+</arguments>
+<msg timestamp="20200809 23:10:54.729" level="INFO">Slept 500 milliseconds</msg>
+<status status="PASS" starttime="20200809 23:10:54.226" endtime="20200809 23:10:54.729"></status>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<doc>Simulates user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>None</arg>
+<arg>TAB</arg>
+</arguments>
+<msg timestamp="20200809 23:10:54.730" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg timestamp="20200809 23:10:54.730" level="INFO">Pressing special key TAB to browser.</msg>
+<status status="PASS" starttime="20200809 23:10:54.729" endtime="20200809 23:10:54.757"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>500ms</arg>
+</arguments>
+<msg timestamp="20200809 23:10:55.260" level="INFO">Slept 500 milliseconds</msg>
+<status status="PASS" starttime="20200809 23:10:54.757" endtime="20200809 23:10:55.260"></status>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<doc>Simulates user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>None</arg>
+<arg>ARROW_DOWN</arg>
+</arguments>
+<msg timestamp="20200809 23:10:55.262" level="INFO">Sending key(s) ('ARROW_DOWN',) to page.</msg>
+<msg timestamp="20200809 23:10:55.262" level="INFO">Pressing special key ARROW_DOWN to browser.</msg>
+<status status="PASS" starttime="20200809 23:10:55.261" endtime="20200809 23:10:55.292"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>300ms</arg>
+</arguments>
+<msg timestamp="20200809 23:10:55.594" level="INFO">Slept 300 milliseconds</msg>
+<status status="PASS" starttime="20200809 23:10:55.292" endtime="20200809 23:10:55.594"></status>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<doc>Simulates user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>None</arg>
+<arg>ENTER</arg>
+</arguments>
+<msg timestamp="20200809 23:10:55.595" level="INFO">Sending key(s) ('ENTER',) to page.</msg>
+<msg timestamp="20200809 23:10:55.595" level="INFO">Pressing special key ENTER to browser.</msg>
+<status status="PASS" starttime="20200809 23:10:55.594" endtime="20200809 23:10:55.618"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=(//button[@type='submit'])[7]</arg>
+</arguments>
+<msg timestamp="20200809 23:10:55.619" level="INFO">Clicking element 'xpath=(//button[@type='submit'])[7]'.</msg>
+<status status="PASS" starttime="20200809 23:10:55.618" endtime="20200809 23:10:55.977"></status>
+</kw>
+<status status="PASS" starttime="20200809 23:10:53.719" endtime="20200809 23:10:55.977"></status>
+</kw>
+<status status="PASS" starttime="20200809 23:10:49.398" endtime="20200809 23:10:55.977"></status>
+</kw>
+<kw name="${singlerows} = ['Boris', 'Dieter', 'montes.nascetur@ultriciesornare.com', 'montes.nascetur@ultriciesornare.com', '312-788-8373']" type="foritem">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${singlerows}</arg>
+</arguments>
+<msg timestamp="20200809 23:10:55.978" level="INFO">['Boris', 'Dieter', 'montes.nascetur@ultriciesornare.com', 'montes.nascetur@ultriciesornare.com', '312-788-8373']</msg>
+<status status="PASS" starttime="20200809 23:10:55.978" endtime="20200809 23:10:55.978"></status>
+</kw>
+<kw name="Run Keyword And Continue On Failure" library="BuiltIn">
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<arguments>
+<arg>Input Text</arg>
+<arg>${first_name_location}</arg>
+<arg>${singlerows[0]}</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${first_name_location}</arg>
+<arg>${singlerows[0]}</arg>
+</arguments>
+<msg timestamp="20200809 23:10:55.979" level="INFO">Typing text 'Boris' into text field 'xpath=//input[@name='first_name']'.</msg>
+<status status="PASS" starttime="20200809 23:10:55.979" endtime="20200809 23:10:56.099"></status>
+</kw>
+<status status="PASS" starttime="20200809 23:10:55.978" endtime="20200809 23:10:56.100"></status>
+</kw>
+<kw name="Run Keyword And Continue On Failure" library="BuiltIn">
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<arguments>
+<arg>Input Text</arg>
+<arg>${last_name_location}</arg>
+<arg>${singlerows[1]}</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${last_name_location}</arg>
+<arg>${singlerows[1]}</arg>
+</arguments>
+<msg timestamp="20200809 23:10:56.100" level="INFO">Typing text 'Dieter' into text field 'xpath=//input[@name='last_name']'.</msg>
+<status status="PASS" starttime="20200809 23:10:56.100" endtime="20200809 23:10:56.218"></status>
+</kw>
+<status status="PASS" starttime="20200809 23:10:56.100" endtime="20200809 23:10:56.218"></status>
+</kw>
+<kw name="Run Keyword And Continue On Failure" library="BuiltIn">
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<arguments>
+<arg>Input Text</arg>
+<arg>${email1_location}</arg>
+<arg>${singlerows[2]}</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${email1_location}</arg>
+<arg>${singlerows[2]}</arg>
+</arguments>
+<msg timestamp="20200809 23:10:56.219" level="INFO">Typing text 'montes.nascetur@ultriciesornare.com' into text field 'xpath=//input[@name='email']'.</msg>
+<status status="PASS" starttime="20200809 23:10:56.218" endtime="20200809 23:10:56.503"></status>
+</kw>
+<status status="PASS" starttime="20200809 23:10:56.218" endtime="20200809 23:10:56.503"></status>
+</kw>
+<kw name="Run Keyword And Continue On Failure" library="BuiltIn">
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<arguments>
+<arg>Input Text</arg>
+<arg>${email2_location}</arg>
+<arg>${singlerows[3]}</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${email2_location}</arg>
+<arg>${singlerows[3]}</arg>
+</arguments>
+<msg timestamp="20200809 23:10:56.504" level="INFO">Typing text 'montes.nascetur@ultriciesornare.com' into text field 'xpath=//input[@name='confirmemail']'.</msg>
+<status status="PASS" starttime="20200809 23:10:56.504" endtime="20200809 23:10:56.758"></status>
+</kw>
+<status status="PASS" starttime="20200809 23:10:56.503" endtime="20200809 23:10:56.758"></status>
+</kw>
+<kw name="Run Keyword And Continue On Failure" library="BuiltIn">
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<arguments>
+<arg>Input Text</arg>
+<arg>${phone_location}</arg>
+<arg>${singlerows[4]}</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${phone_location}</arg>
+<arg>${singlerows[4]}</arg>
+</arguments>
+<msg timestamp="20200809 23:10:56.759" level="INFO">Typing text '312-788-8373' into text field 'xpath=//input[@name='phone']'.</msg>
+<status status="PASS" starttime="20200809 23:10:56.759" endtime="20200809 23:10:56.902"></status>
+</kw>
+<status status="PASS" starttime="20200809 23:10:56.759" endtime="20200809 23:10:56.902"></status>
+</kw>
+<kw name="Run Keyword And Continue On Failure" library="BuiltIn">
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<arguments>
+<arg>Click Element</arg>
+<arg>${booking_button}</arg>
+</arguments>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${booking_button}</arg>
+</arguments>
+<msg timestamp="20200809 23:10:56.903" level="INFO">Clicking element 'xpath=//button[@id='sub']'.</msg>
+<status status="PASS" starttime="20200809 23:10:56.903" endtime="20200809 23:10:57.475"></status>
+</kw>
+<status status="PASS" starttime="20200809 23:10:56.903" endtime="20200809 23:10:57.475"></status>
+</kw>
+<kw name="Run Keyword And Continue On Failure" library="BuiltIn">
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<arguments>
+<arg>Click Element</arg>
+<arg>${home_page_button}</arg>
+</arguments>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${home_page_button}</arg>
+</arguments>
+<msg timestamp="20200809 23:10:57.476" level="INFO">Clicking element 'css=.main-nav-menu &gt; .main-nav:nth-child(1) a'.</msg>
+<status status="PASS" starttime="20200809 23:10:57.476" endtime="20200809 23:10:57.542"></status>
+</kw>
+<status status="PASS" starttime="20200809 23:10:57.476" endtime="20200809 23:10:57.542"></status>
+</kw>
+<kw name="Visa Page" library="Trifecta_Keywords">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1s</arg>
+</arguments>
+<msg timestamp="20200809 23:10:58.544" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20200809 23:10:57.543" endtime="20200809 23:10:58.544"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${visa_button}</arg>
+</arguments>
+<msg timestamp="20200809 23:10:58.545" level="INFO">Clicking element 'css=.visa'.</msg>
+<status status="PASS" starttime="20200809 23:10:58.544" endtime="20200809 23:11:00.080"></status>
+</kw>
+<status status="PASS" starttime="20200809 23:10:57.542" endtime="20200809 23:11:00.080"></status>
+</kw>
+<kw name="Visa Selection" library="Trifecta_Keywords">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//div[@id='visa']/div/div/form/div/div/div/div/div[2]/div/a/div</arg>
+</arguments>
+<msg timestamp="20200809 23:11:00.081" level="INFO">Clicking element 'xpath=//div[@id='visa']/div/div/form/div/div/div/div/div[2]/div/a/div'.</msg>
+<status status="PASS" starttime="20200809 23:11:00.081" endtime="20200809 23:11:00.245"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//div[@id='visa']/div/div/form/div/div/div/div/div[2]/div/div/ul/li[21]</arg>
+</arguments>
+<msg timestamp="20200809 23:11:00.247" level="INFO">Clicking element 'xpath=//div[@id='visa']/div/div/form/div/div/div/div/div[2]/div/div/ul/li[21]'.</msg>
+<status status="PASS" starttime="20200809 23:11:00.246" endtime="20200809 23:11:00.358"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//div[@id='visa']/div/div/form/div/div/div[2]/div/div[2]/div/a/div</arg>
+</arguments>
+<msg timestamp="20200809 23:11:00.358" level="INFO">Clicking element 'xpath=//div[@id='visa']/div/div/form/div/div/div[2]/div/div[2]/div/a/div'.</msg>
+<status status="PASS" starttime="20200809 23:11:00.358" endtime="20200809 23:11:00.464"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//div[@id='visa']/div/div/form/div/div/div[2]/div/div[2]/div/div/ul/li[28]</arg>
+</arguments>
+<msg timestamp="20200809 23:11:00.465" level="INFO">Clicking element 'xpath=//div[@id='visa']/div/div/form/div/div/div[2]/div/div[2]/div/div/ul/li[28]'.</msg>
+<status status="PASS" starttime="20200809 23:11:00.464" endtime="20200809 23:11:00.543"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>500ms</arg>
+</arguments>
+<msg timestamp="20200809 23:11:01.044" level="INFO">Slept 500 milliseconds</msg>
+<status status="PASS" starttime="20200809 23:11:00.543" endtime="20200809 23:11:01.044"></status>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<doc>Simulates user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>None</arg>
+<arg>TAB</arg>
+</arguments>
+<msg timestamp="20200809 23:11:01.045" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg timestamp="20200809 23:11:01.045" level="INFO">Pressing special key TAB to browser.</msg>
+<status status="PASS" starttime="20200809 23:11:01.044" endtime="20200809 23:11:01.082"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>500ms</arg>
+</arguments>
+<msg timestamp="20200809 23:11:01.583" level="INFO">Slept 500 milliseconds</msg>
+<status status="PASS" starttime="20200809 23:11:01.083" endtime="20200809 23:11:01.583"></status>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<doc>Simulates user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>None</arg>
+<arg>ARROW_DOWN</arg>
+</arguments>
+<msg timestamp="20200809 23:11:01.584" level="INFO">Sending key(s) ('ARROW_DOWN',) to page.</msg>
+<msg timestamp="20200809 23:11:01.584" level="INFO">Pressing special key ARROW_DOWN to browser.</msg>
+<status status="PASS" starttime="20200809 23:11:01.583" endtime="20200809 23:11:01.608"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>300ms</arg>
+</arguments>
+<msg timestamp="20200809 23:11:01.909" level="INFO">Slept 300 milliseconds</msg>
+<status status="PASS" starttime="20200809 23:11:01.608" endtime="20200809 23:11:01.909"></status>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<doc>Simulates user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>None</arg>
+<arg>ENTER</arg>
+</arguments>
+<msg timestamp="20200809 23:11:01.910" level="INFO">Sending key(s) ('ENTER',) to page.</msg>
+<msg timestamp="20200809 23:11:01.910" level="INFO">Pressing special key ENTER to browser.</msg>
+<status status="PASS" starttime="20200809 23:11:01.909" endtime="20200809 23:11:01.932"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=(//button[@type='submit'])[7]</arg>
+</arguments>
+<msg timestamp="20200809 23:11:01.933" level="INFO">Clicking element 'xpath=(//button[@type='submit'])[7]'.</msg>
+<status status="PASS" starttime="20200809 23:11:01.932" endtime="20200809 23:11:02.291"></status>
+</kw>
+<status status="PASS" starttime="20200809 23:11:00.080" endtime="20200809 23:11:02.291"></status>
+</kw>
+<status status="PASS" starttime="20200809 23:10:55.977" endtime="20200809 23:11:02.291"></status>
+</kw>
+<kw name="${singlerows} = ['Urielle', 'Beck', 'Curabitur.dictum@dapibusligula.org', 'Curabitur.dictum@dapibusligula.org', '414-777-3210']" type="foritem">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${singlerows}</arg>
+</arguments>
+<msg timestamp="20200809 23:11:02.292" level="INFO">['Urielle', 'Beck', 'Curabitur.dictum@dapibusligula.org', 'Curabitur.dictum@dapibusligula.org', '414-777-3210']</msg>
+<status status="PASS" starttime="20200809 23:11:02.291" endtime="20200809 23:11:02.292"></status>
+</kw>
+<kw name="Run Keyword And Continue On Failure" library="BuiltIn">
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<arguments>
+<arg>Input Text</arg>
+<arg>${first_name_location}</arg>
+<arg>${singlerows[0]}</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${first_name_location}</arg>
+<arg>${singlerows[0]}</arg>
+</arguments>
+<msg timestamp="20200809 23:11:02.292" level="INFO">Typing text 'Urielle' into text field 'xpath=//input[@name='first_name']'.</msg>
+<status status="PASS" starttime="20200809 23:11:02.292" endtime="20200809 23:11:02.410"></status>
+</kw>
+<status status="PASS" starttime="20200809 23:11:02.292" endtime="20200809 23:11:02.410"></status>
+</kw>
+<kw name="Run Keyword And Continue On Failure" library="BuiltIn">
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<arguments>
+<arg>Input Text</arg>
+<arg>${last_name_location}</arg>
+<arg>${singlerows[1]}</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${last_name_location}</arg>
+<arg>${singlerows[1]}</arg>
+</arguments>
+<msg timestamp="20200809 23:11:02.411" level="INFO">Typing text 'Beck' into text field 'xpath=//input[@name='last_name']'.</msg>
+<status status="PASS" starttime="20200809 23:11:02.411" endtime="20200809 23:11:02.512"></status>
+</kw>
+<status status="PASS" starttime="20200809 23:11:02.411" endtime="20200809 23:11:02.512"></status>
+</kw>
+<kw name="Run Keyword And Continue On Failure" library="BuiltIn">
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<arguments>
+<arg>Input Text</arg>
+<arg>${email1_location}</arg>
+<arg>${singlerows[2]}</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${email1_location}</arg>
+<arg>${singlerows[2]}</arg>
+</arguments>
+<msg timestamp="20200809 23:11:02.513" level="INFO">Typing text 'Curabitur.dictum@dapibusligula.org' into text field 'xpath=//input[@name='email']'.</msg>
+<status status="PASS" starttime="20200809 23:11:02.512" endtime="20200809 23:11:02.776"></status>
+</kw>
+<status status="PASS" starttime="20200809 23:11:02.512" endtime="20200809 23:11:02.776"></status>
+</kw>
+<kw name="Run Keyword And Continue On Failure" library="BuiltIn">
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<arguments>
+<arg>Input Text</arg>
+<arg>${email2_location}</arg>
+<arg>${singlerows[3]}</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${email2_location}</arg>
+<arg>${singlerows[3]}</arg>
+</arguments>
+<msg timestamp="20200809 23:11:02.776" level="INFO">Typing text 'Curabitur.dictum@dapibusligula.org' into text field 'xpath=//input[@name='confirmemail']'.</msg>
+<status status="PASS" starttime="20200809 23:11:02.776" endtime="20200809 23:11:03.035"></status>
+</kw>
+<status status="PASS" starttime="20200809 23:11:02.776" endtime="20200809 23:11:03.035"></status>
+</kw>
+<kw name="Run Keyword And Continue On Failure" library="BuiltIn">
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<arguments>
+<arg>Input Text</arg>
+<arg>${phone_location}</arg>
+<arg>${singlerows[4]}</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${phone_location}</arg>
+<arg>${singlerows[4]}</arg>
+</arguments>
+<msg timestamp="20200809 23:11:03.037" level="INFO">Typing text '414-777-3210' into text field 'xpath=//input[@name='phone']'.</msg>
+<status status="PASS" starttime="20200809 23:11:03.036" endtime="20200809 23:11:03.178"></status>
+</kw>
+<status status="PASS" starttime="20200809 23:11:03.036" endtime="20200809 23:11:03.178"></status>
+</kw>
+<kw name="Run Keyword And Continue On Failure" library="BuiltIn">
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<arguments>
+<arg>Click Element</arg>
+<arg>${booking_button}</arg>
+</arguments>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${booking_button}</arg>
+</arguments>
+<msg timestamp="20200809 23:11:03.179" level="INFO">Clicking element 'xpath=//button[@id='sub']'.</msg>
+<status status="PASS" starttime="20200809 23:11:03.179" endtime="20200809 23:11:03.764"></status>
+</kw>
+<status status="PASS" starttime="20200809 23:11:03.179" endtime="20200809 23:11:03.764"></status>
+</kw>
+<kw name="Run Keyword And Continue On Failure" library="BuiltIn">
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<arguments>
+<arg>Click Element</arg>
+<arg>${home_page_button}</arg>
+</arguments>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${home_page_button}</arg>
+</arguments>
+<msg timestamp="20200809 23:11:03.765" level="INFO">Clicking element 'css=.main-nav-menu &gt; .main-nav:nth-child(1) a'.</msg>
+<status status="PASS" starttime="20200809 23:11:03.765" endtime="20200809 23:11:03.847"></status>
+</kw>
+<status status="PASS" starttime="20200809 23:11:03.765" endtime="20200809 23:11:03.847"></status>
+</kw>
+<kw name="Visa Page" library="Trifecta_Keywords">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1s</arg>
+</arguments>
+<msg timestamp="20200809 23:11:04.848" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20200809 23:11:03.848" endtime="20200809 23:11:04.848"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${visa_button}</arg>
+</arguments>
+<msg timestamp="20200809 23:11:04.848" level="INFO">Clicking element 'css=.visa'.</msg>
+<status status="PASS" starttime="20200809 23:11:04.848" endtime="20200809 23:11:06.398"></status>
+</kw>
+<status status="PASS" starttime="20200809 23:11:03.848" endtime="20200809 23:11:06.399"></status>
+</kw>
+<kw name="Visa Selection" library="Trifecta_Keywords">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//div[@id='visa']/div/div/form/div/div/div/div/div[2]/div/a/div</arg>
+</arguments>
+<msg timestamp="20200809 23:11:06.399" level="INFO">Clicking element 'xpath=//div[@id='visa']/div/div/form/div/div/div/div/div[2]/div/a/div'.</msg>
+<status status="PASS" starttime="20200809 23:11:06.399" endtime="20200809 23:11:06.588"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//div[@id='visa']/div/div/form/div/div/div/div/div[2]/div/div/ul/li[21]</arg>
+</arguments>
+<msg timestamp="20200809 23:11:06.589" level="INFO">Clicking element 'xpath=//div[@id='visa']/div/div/form/div/div/div/div/div[2]/div/div/ul/li[21]'.</msg>
+<status status="PASS" starttime="20200809 23:11:06.588" endtime="20200809 23:11:06.697"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//div[@id='visa']/div/div/form/div/div/div[2]/div/div[2]/div/a/div</arg>
+</arguments>
+<msg timestamp="20200809 23:11:06.697" level="INFO">Clicking element 'xpath=//div[@id='visa']/div/div/form/div/div/div[2]/div/div[2]/div/a/div'.</msg>
+<status status="PASS" starttime="20200809 23:11:06.697" endtime="20200809 23:11:06.799"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//div[@id='visa']/div/div/form/div/div/div[2]/div/div[2]/div/div/ul/li[28]</arg>
+</arguments>
+<msg timestamp="20200809 23:11:06.800" level="INFO">Clicking element 'xpath=//div[@id='visa']/div/div/form/div/div/div[2]/div/div[2]/div/div/ul/li[28]'.</msg>
+<status status="PASS" starttime="20200809 23:11:06.800" endtime="20200809 23:11:06.890"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>500ms</arg>
+</arguments>
+<msg timestamp="20200809 23:11:07.391" level="INFO">Slept 500 milliseconds</msg>
+<status status="PASS" starttime="20200809 23:11:06.890" endtime="20200809 23:11:07.391"></status>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<doc>Simulates user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>None</arg>
+<arg>TAB</arg>
+</arguments>
+<msg timestamp="20200809 23:11:07.392" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg timestamp="20200809 23:11:07.392" level="INFO">Pressing special key TAB to browser.</msg>
+<status status="PASS" starttime="20200809 23:11:07.391" endtime="20200809 23:11:07.420"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>500ms</arg>
+</arguments>
+<msg timestamp="20200809 23:11:07.921" level="INFO">Slept 500 milliseconds</msg>
+<status status="PASS" starttime="20200809 23:11:07.420" endtime="20200809 23:11:07.921"></status>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<doc>Simulates user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>None</arg>
+<arg>ARROW_DOWN</arg>
+</arguments>
+<msg timestamp="20200809 23:11:07.923" level="INFO">Sending key(s) ('ARROW_DOWN',) to page.</msg>
+<msg timestamp="20200809 23:11:07.923" level="INFO">Pressing special key ARROW_DOWN to browser.</msg>
+<status status="PASS" starttime="20200809 23:11:07.921" endtime="20200809 23:11:07.958"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>300ms</arg>
+</arguments>
+<msg timestamp="20200809 23:11:08.261" level="INFO">Slept 300 milliseconds</msg>
+<status status="PASS" starttime="20200809 23:11:07.958" endtime="20200809 23:11:08.261"></status>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<doc>Simulates user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>None</arg>
+<arg>ENTER</arg>
+</arguments>
+<msg timestamp="20200809 23:11:08.262" level="INFO">Sending key(s) ('ENTER',) to page.</msg>
+<msg timestamp="20200809 23:11:08.262" level="INFO">Pressing special key ENTER to browser.</msg>
+<status status="PASS" starttime="20200809 23:11:08.261" endtime="20200809 23:11:08.294"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=(//button[@type='submit'])[7]</arg>
+</arguments>
+<msg timestamp="20200809 23:11:08.295" level="INFO">Clicking element 'xpath=(//button[@type='submit'])[7]'.</msg>
+<status status="PASS" starttime="20200809 23:11:08.294" endtime="20200809 23:11:08.647"></status>
+</kw>
+<status status="PASS" starttime="20200809 23:11:06.399" endtime="20200809 23:11:08.648"></status>
+</kw>
+<status status="PASS" starttime="20200809 23:11:02.291" endtime="20200809 23:11:08.648"></status>
+</kw>
+<kw name="${singlerows} = ['Lawrence', 'Jelani', 'fringilla@IntegermollisInteger.ca', 'fringilla@IntegermollisInteger.ca', '773-390-1540']" type="foritem">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${singlerows}</arg>
+</arguments>
+<msg timestamp="20200809 23:11:08.648" level="INFO">['Lawrence', 'Jelani', 'fringilla@IntegermollisInteger.ca', 'fringilla@IntegermollisInteger.ca', '773-390-1540']</msg>
+<status status="PASS" starttime="20200809 23:11:08.648" endtime="20200809 23:11:08.648"></status>
+</kw>
+<kw name="Run Keyword And Continue On Failure" library="BuiltIn">
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<arguments>
+<arg>Input Text</arg>
+<arg>${first_name_location}</arg>
+<arg>${singlerows[0]}</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${first_name_location}</arg>
+<arg>${singlerows[0]}</arg>
+</arguments>
+<msg timestamp="20200809 23:11:08.649" level="INFO">Typing text 'Lawrence' into text field 'xpath=//input[@name='first_name']'.</msg>
+<status status="PASS" starttime="20200809 23:11:08.649" endtime="20200809 23:11:08.773"></status>
+</kw>
+<status status="PASS" starttime="20200809 23:11:08.648" endtime="20200809 23:11:08.773"></status>
+</kw>
+<kw name="Run Keyword And Continue On Failure" library="BuiltIn">
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<arguments>
+<arg>Input Text</arg>
+<arg>${last_name_location}</arg>
+<arg>${singlerows[1]}</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${last_name_location}</arg>
+<arg>${singlerows[1]}</arg>
+</arguments>
+<msg timestamp="20200809 23:11:08.774" level="INFO">Typing text 'Jelani' into text field 'xpath=//input[@name='last_name']'.</msg>
+<status status="PASS" starttime="20200809 23:11:08.774" endtime="20200809 23:11:08.892"></status>
+</kw>
+<status status="PASS" starttime="20200809 23:11:08.773" endtime="20200809 23:11:08.892"></status>
+</kw>
+<kw name="Run Keyword And Continue On Failure" library="BuiltIn">
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<arguments>
+<arg>Input Text</arg>
+<arg>${email1_location}</arg>
+<arg>${singlerows[2]}</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${email1_location}</arg>
+<arg>${singlerows[2]}</arg>
+</arguments>
+<msg timestamp="20200809 23:11:08.894" level="INFO">Typing text 'fringilla@IntegermollisInteger.ca' into text field 'xpath=//input[@name='email']'.</msg>
+<status status="PASS" starttime="20200809 23:11:08.893" endtime="20200809 23:11:09.152"></status>
+</kw>
+<status status="PASS" starttime="20200809 23:11:08.893" endtime="20200809 23:11:09.152"></status>
+</kw>
+<kw name="Run Keyword And Continue On Failure" library="BuiltIn">
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<arguments>
+<arg>Input Text</arg>
+<arg>${email2_location}</arg>
+<arg>${singlerows[3]}</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${email2_location}</arg>
+<arg>${singlerows[3]}</arg>
+</arguments>
+<msg timestamp="20200809 23:11:09.154" level="INFO">Typing text 'fringilla@IntegermollisInteger.ca' into text field 'xpath=//input[@name='confirmemail']'.</msg>
+<status status="PASS" starttime="20200809 23:11:09.153" endtime="20200809 23:11:09.387"></status>
+</kw>
+<status status="PASS" starttime="20200809 23:11:09.153" endtime="20200809 23:11:09.387"></status>
+</kw>
+<kw name="Run Keyword And Continue On Failure" library="BuiltIn">
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<arguments>
+<arg>Input Text</arg>
+<arg>${phone_location}</arg>
+<arg>${singlerows[4]}</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${phone_location}</arg>
+<arg>${singlerows[4]}</arg>
+</arguments>
+<msg timestamp="20200809 23:11:09.388" level="INFO">Typing text '773-390-1540' into text field 'xpath=//input[@name='phone']'.</msg>
+<status status="PASS" starttime="20200809 23:11:09.388" endtime="20200809 23:11:09.535"></status>
+</kw>
+<status status="PASS" starttime="20200809 23:11:09.387" endtime="20200809 23:11:09.535"></status>
+</kw>
+<kw name="Run Keyword And Continue On Failure" library="BuiltIn">
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<arguments>
+<arg>Click Element</arg>
+<arg>${booking_button}</arg>
+</arguments>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${booking_button}</arg>
+</arguments>
+<msg timestamp="20200809 23:11:09.535" level="INFO">Clicking element 'xpath=//button[@id='sub']'.</msg>
+<status status="PASS" starttime="20200809 23:11:09.535" endtime="20200809 23:11:10.537"></status>
+</kw>
+<status status="PASS" starttime="20200809 23:11:09.535" endtime="20200809 23:11:10.537"></status>
+</kw>
+<kw name="Run Keyword And Continue On Failure" library="BuiltIn">
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<arguments>
+<arg>Click Element</arg>
+<arg>${home_page_button}</arg>
+</arguments>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${home_page_button}</arg>
+</arguments>
+<msg timestamp="20200809 23:11:10.538" level="INFO">Clicking element 'css=.main-nav-menu &gt; .main-nav:nth-child(1) a'.</msg>
+<status status="PASS" starttime="20200809 23:11:10.538" endtime="20200809 23:11:10.623"></status>
+</kw>
+<status status="PASS" starttime="20200809 23:11:10.538" endtime="20200809 23:11:10.623"></status>
+</kw>
+<kw name="Visa Page" library="Trifecta_Keywords">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1s</arg>
+</arguments>
+<msg timestamp="20200809 23:11:11.625" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20200809 23:11:10.624" endtime="20200809 23:11:11.625"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${visa_button}</arg>
+</arguments>
+<msg timestamp="20200809 23:11:11.626" level="INFO">Clicking element 'css=.visa'.</msg>
+<status status="PASS" starttime="20200809 23:11:11.625" endtime="20200809 23:11:13.127"></status>
+</kw>
+<status status="PASS" starttime="20200809 23:11:10.623" endtime="20200809 23:11:13.127"></status>
+</kw>
+<kw name="Visa Selection" library="Trifecta_Keywords">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//div[@id='visa']/div/div/form/div/div/div/div/div[2]/div/a/div</arg>
+</arguments>
+<msg timestamp="20200809 23:11:13.129" level="INFO">Clicking element 'xpath=//div[@id='visa']/div/div/form/div/div/div/div/div[2]/div/a/div'.</msg>
+<status status="PASS" starttime="20200809 23:11:13.128" endtime="20200809 23:11:13.342"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//div[@id='visa']/div/div/form/div/div/div/div/div[2]/div/div/ul/li[21]</arg>
+</arguments>
+<msg timestamp="20200809 23:11:13.343" level="INFO">Clicking element 'xpath=//div[@id='visa']/div/div/form/div/div/div/div/div[2]/div/div/ul/li[21]'.</msg>
+<status status="PASS" starttime="20200809 23:11:13.342" endtime="20200809 23:11:13.470"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//div[@id='visa']/div/div/form/div/div/div[2]/div/div[2]/div/a/div</arg>
+</arguments>
+<msg timestamp="20200809 23:11:13.471" level="INFO">Clicking element 'xpath=//div[@id='visa']/div/div/form/div/div/div[2]/div/div[2]/div/a/div'.</msg>
+<status status="PASS" starttime="20200809 23:11:13.471" endtime="20200809 23:11:13.585"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//div[@id='visa']/div/div/form/div/div/div[2]/div/div[2]/div/div/ul/li[28]</arg>
+</arguments>
+<msg timestamp="20200809 23:11:13.585" level="INFO">Clicking element 'xpath=//div[@id='visa']/div/div/form/div/div/div[2]/div/div[2]/div/div/ul/li[28]'.</msg>
+<status status="PASS" starttime="20200809 23:11:13.585" endtime="20200809 23:11:13.678"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>500ms</arg>
+</arguments>
+<msg timestamp="20200809 23:11:14.179" level="INFO">Slept 500 milliseconds</msg>
+<status status="PASS" starttime="20200809 23:11:13.678" endtime="20200809 23:11:14.179"></status>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<doc>Simulates user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>None</arg>
+<arg>TAB</arg>
+</arguments>
+<msg timestamp="20200809 23:11:14.180" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg timestamp="20200809 23:11:14.180" level="INFO">Pressing special key TAB to browser.</msg>
+<status status="PASS" starttime="20200809 23:11:14.179" endtime="20200809 23:11:14.211"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>500ms</arg>
+</arguments>
+<msg timestamp="20200809 23:11:14.713" level="INFO">Slept 500 milliseconds</msg>
+<status status="PASS" starttime="20200809 23:11:14.211" endtime="20200809 23:11:14.713"></status>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<doc>Simulates user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>None</arg>
+<arg>ARROW_DOWN</arg>
+</arguments>
+<msg timestamp="20200809 23:11:14.714" level="INFO">Sending key(s) ('ARROW_DOWN',) to page.</msg>
+<msg timestamp="20200809 23:11:14.714" level="INFO">Pressing special key ARROW_DOWN to browser.</msg>
+<status status="PASS" starttime="20200809 23:11:14.713" endtime="20200809 23:11:14.737"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>300ms</arg>
+</arguments>
+<msg timestamp="20200809 23:11:15.039" level="INFO">Slept 300 milliseconds</msg>
+<status status="PASS" starttime="20200809 23:11:14.737" endtime="20200809 23:11:15.039"></status>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<doc>Simulates user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>None</arg>
+<arg>ENTER</arg>
+</arguments>
+<msg timestamp="20200809 23:11:15.040" level="INFO">Sending key(s) ('ENTER',) to page.</msg>
+<msg timestamp="20200809 23:11:15.040" level="INFO">Pressing special key ENTER to browser.</msg>
+<status status="PASS" starttime="20200809 23:11:15.039" endtime="20200809 23:11:15.068"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=(//button[@type='submit'])[7]</arg>
+</arguments>
+<msg timestamp="20200809 23:11:15.068" level="INFO">Clicking element 'xpath=(//button[@type='submit'])[7]'.</msg>
+<status status="PASS" starttime="20200809 23:11:15.068" endtime="20200809 23:11:15.433"></status>
+</kw>
+<status status="PASS" starttime="20200809 23:11:13.127" endtime="20200809 23:11:15.433"></status>
+</kw>
+<status status="PASS" starttime="20200809 23:11:08.648" endtime="20200809 23:11:15.433"></status>
+</kw>
+<kw name="${singlerows} = ['Shelly', 'Azalia', 'diam@vestibulumMaurismagna.co.uk', 'diam@vestibulumMaurismagna.co.uk', '323-897-4352']" type="foritem">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${singlerows}</arg>
+</arguments>
+<msg timestamp="20200809 23:11:15.434" level="INFO">['Shelly', 'Azalia', 'diam@vestibulumMaurismagna.co.uk', 'diam@vestibulumMaurismagna.co.uk', '323-897-4352']</msg>
+<status status="PASS" starttime="20200809 23:11:15.434" endtime="20200809 23:11:15.434"></status>
+</kw>
+<kw name="Run Keyword And Continue On Failure" library="BuiltIn">
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<arguments>
+<arg>Input Text</arg>
+<arg>${first_name_location}</arg>
+<arg>${singlerows[0]}</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${first_name_location}</arg>
+<arg>${singlerows[0]}</arg>
+</arguments>
+<msg timestamp="20200809 23:11:15.436" level="INFO">Typing text 'Shelly' into text field 'xpath=//input[@name='first_name']'.</msg>
+<status status="PASS" starttime="20200809 23:11:15.435" endtime="20200809 23:11:15.543"></status>
+</kw>
+<status status="PASS" starttime="20200809 23:11:15.434" endtime="20200809 23:11:15.543"></status>
+</kw>
+<kw name="Run Keyword And Continue On Failure" library="BuiltIn">
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<arguments>
+<arg>Input Text</arg>
+<arg>${last_name_location}</arg>
+<arg>${singlerows[1]}</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${last_name_location}</arg>
+<arg>${singlerows[1]}</arg>
+</arguments>
+<msg timestamp="20200809 23:11:15.544" level="INFO">Typing text 'Azalia' into text field 'xpath=//input[@name='last_name']'.</msg>
+<status status="PASS" starttime="20200809 23:11:15.544" endtime="20200809 23:11:15.669"></status>
+</kw>
+<status status="PASS" starttime="20200809 23:11:15.543" endtime="20200809 23:11:15.669"></status>
+</kw>
+<kw name="Run Keyword And Continue On Failure" library="BuiltIn">
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<arguments>
+<arg>Input Text</arg>
+<arg>${email1_location}</arg>
+<arg>${singlerows[2]}</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${email1_location}</arg>
+<arg>${singlerows[2]}</arg>
+</arguments>
+<msg timestamp="20200809 23:11:15.670" level="INFO">Typing text 'diam@vestibulumMaurismagna.co.uk' into text field 'xpath=//input[@name='email']'.</msg>
+<status status="PASS" starttime="20200809 23:11:15.670" endtime="20200809 23:11:15.952"></status>
+</kw>
+<status status="PASS" starttime="20200809 23:11:15.670" endtime="20200809 23:11:15.952"></status>
+</kw>
+<kw name="Run Keyword And Continue On Failure" library="BuiltIn">
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<arguments>
+<arg>Input Text</arg>
+<arg>${email2_location}</arg>
+<arg>${singlerows[3]}</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${email2_location}</arg>
+<arg>${singlerows[3]}</arg>
+</arguments>
+<msg timestamp="20200809 23:11:15.953" level="INFO">Typing text 'diam@vestibulumMaurismagna.co.uk' into text field 'xpath=//input[@name='confirmemail']'.</msg>
+<status status="PASS" starttime="20200809 23:11:15.953" endtime="20200809 23:11:16.206"></status>
+</kw>
+<status status="PASS" starttime="20200809 23:11:15.953" endtime="20200809 23:11:16.206"></status>
+</kw>
+<kw name="Run Keyword And Continue On Failure" library="BuiltIn">
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<arguments>
+<arg>Input Text</arg>
+<arg>${phone_location}</arg>
+<arg>${singlerows[4]}</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${phone_location}</arg>
+<arg>${singlerows[4]}</arg>
+</arguments>
+<msg timestamp="20200809 23:11:16.207" level="INFO">Typing text '323-897-4352' into text field 'xpath=//input[@name='phone']'.</msg>
+<status status="PASS" starttime="20200809 23:11:16.207" endtime="20200809 23:11:16.353"></status>
+</kw>
+<status status="PASS" starttime="20200809 23:11:16.206" endtime="20200809 23:11:16.353"></status>
+</kw>
+<kw name="Run Keyword And Continue On Failure" library="BuiltIn">
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<arguments>
+<arg>Click Element</arg>
+<arg>${booking_button}</arg>
+</arguments>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${booking_button}</arg>
+</arguments>
+<msg timestamp="20200809 23:11:16.354" level="INFO">Clicking element 'xpath=//button[@id='sub']'.</msg>
+<status status="PASS" starttime="20200809 23:11:16.354" endtime="20200809 23:11:16.948"></status>
+</kw>
+<status status="PASS" starttime="20200809 23:11:16.353" endtime="20200809 23:11:16.948"></status>
+</kw>
+<kw name="Run Keyword And Continue On Failure" library="BuiltIn">
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<arguments>
+<arg>Click Element</arg>
+<arg>${home_page_button}</arg>
+</arguments>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${home_page_button}</arg>
+</arguments>
+<msg timestamp="20200809 23:11:16.949" level="INFO">Clicking element 'css=.main-nav-menu &gt; .main-nav:nth-child(1) a'.</msg>
+<status status="PASS" starttime="20200809 23:11:16.948" endtime="20200809 23:11:17.024"></status>
+</kw>
+<status status="PASS" starttime="20200809 23:11:16.948" endtime="20200809 23:11:17.025"></status>
+</kw>
+<kw name="Visa Page" library="Trifecta_Keywords">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1s</arg>
+</arguments>
+<msg timestamp="20200809 23:11:18.028" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20200809 23:11:17.025" endtime="20200809 23:11:18.028"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${visa_button}</arg>
+</arguments>
+<msg timestamp="20200809 23:11:18.029" level="INFO">Clicking element 'css=.visa'.</msg>
+<status status="PASS" starttime="20200809 23:11:18.028" endtime="20200809 23:11:19.809"></status>
+</kw>
+<status status="PASS" starttime="20200809 23:11:17.025" endtime="20200809 23:11:19.809"></status>
+</kw>
+<kw name="Visa Selection" library="Trifecta_Keywords">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//div[@id='visa']/div/div/form/div/div/div/div/div[2]/div/a/div</arg>
+</arguments>
+<msg timestamp="20200809 23:11:19.810" level="INFO">Clicking element 'xpath=//div[@id='visa']/div/div/form/div/div/div/div/div[2]/div/a/div'.</msg>
+<status status="PASS" starttime="20200809 23:11:19.809" endtime="20200809 23:11:20.044"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//div[@id='visa']/div/div/form/div/div/div/div/div[2]/div/div/ul/li[21]</arg>
+</arguments>
+<msg timestamp="20200809 23:11:20.045" level="INFO">Clicking element 'xpath=//div[@id='visa']/div/div/form/div/div/div/div/div[2]/div/div/ul/li[21]'.</msg>
+<status status="PASS" starttime="20200809 23:11:20.044" endtime="20200809 23:11:20.174"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//div[@id='visa']/div/div/form/div/div/div[2]/div/div[2]/div/a/div</arg>
+</arguments>
+<msg timestamp="20200809 23:11:20.174" level="INFO">Clicking element 'xpath=//div[@id='visa']/div/div/form/div/div/div[2]/div/div[2]/div/a/div'.</msg>
+<status status="PASS" starttime="20200809 23:11:20.174" endtime="20200809 23:11:20.297"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//div[@id='visa']/div/div/form/div/div/div[2]/div/div[2]/div/div/ul/li[28]</arg>
+</arguments>
+<msg timestamp="20200809 23:11:20.298" level="INFO">Clicking element 'xpath=//div[@id='visa']/div/div/form/div/div/div[2]/div/div[2]/div/div/ul/li[28]'.</msg>
+<status status="PASS" starttime="20200809 23:11:20.297" endtime="20200809 23:11:20.418"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>500ms</arg>
+</arguments>
+<msg timestamp="20200809 23:11:20.921" level="INFO">Slept 500 milliseconds</msg>
+<status status="PASS" starttime="20200809 23:11:20.418" endtime="20200809 23:11:20.921"></status>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<doc>Simulates user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>None</arg>
+<arg>TAB</arg>
+</arguments>
+<msg timestamp="20200809 23:11:20.922" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg timestamp="20200809 23:11:20.922" level="INFO">Pressing special key TAB to browser.</msg>
+<status status="PASS" starttime="20200809 23:11:20.921" endtime="20200809 23:11:20.963"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>500ms</arg>
+</arguments>
+<msg timestamp="20200809 23:11:21.466" level="INFO">Slept 500 milliseconds</msg>
+<status status="PASS" starttime="20200809 23:11:20.964" endtime="20200809 23:11:21.466"></status>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<doc>Simulates user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>None</arg>
+<arg>ARROW_DOWN</arg>
+</arguments>
+<msg timestamp="20200809 23:11:21.467" level="INFO">Sending key(s) ('ARROW_DOWN',) to page.</msg>
+<msg timestamp="20200809 23:11:21.468" level="INFO">Pressing special key ARROW_DOWN to browser.</msg>
+<status status="PASS" starttime="20200809 23:11:21.466" endtime="20200809 23:11:21.500"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>300ms</arg>
+</arguments>
+<msg timestamp="20200809 23:11:21.803" level="INFO">Slept 300 milliseconds</msg>
+<status status="PASS" starttime="20200809 23:11:21.500" endtime="20200809 23:11:21.803"></status>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<doc>Simulates user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>None</arg>
+<arg>ENTER</arg>
+</arguments>
+<msg timestamp="20200809 23:11:21.804" level="INFO">Sending key(s) ('ENTER',) to page.</msg>
+<msg timestamp="20200809 23:11:21.804" level="INFO">Pressing special key ENTER to browser.</msg>
+<status status="PASS" starttime="20200809 23:11:21.803" endtime="20200809 23:11:21.829"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=(//button[@type='submit'])[7]</arg>
+</arguments>
+<msg timestamp="20200809 23:11:21.830" level="INFO">Clicking element 'xpath=(//button[@type='submit'])[7]'.</msg>
+<status status="PASS" starttime="20200809 23:11:21.829" endtime="20200809 23:11:22.187"></status>
+</kw>
+<status status="PASS" starttime="20200809 23:11:19.809" endtime="20200809 23:11:22.188"></status>
+</kw>
+<status status="PASS" starttime="20200809 23:11:15.433" endtime="20200809 23:11:22.188"></status>
+</kw>
+<kw name="${singlerows} = ['Kaye', 'Joel', 'vitae@cursusluctusipsum.ca', 'vitae@cursusluctusipsum.ca', '773-872-0001']" type="foritem">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${singlerows}</arg>
+</arguments>
+<msg timestamp="20200809 23:11:22.188" level="INFO">['Kaye', 'Joel', 'vitae@cursusluctusipsum.ca', 'vitae@cursusluctusipsum.ca', '773-872-0001']</msg>
+<status status="PASS" starttime="20200809 23:11:22.188" endtime="20200809 23:11:22.189"></status>
+</kw>
+<kw name="Run Keyword And Continue On Failure" library="BuiltIn">
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<arguments>
+<arg>Input Text</arg>
+<arg>${first_name_location}</arg>
+<arg>${singlerows[0]}</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${first_name_location}</arg>
+<arg>${singlerows[0]}</arg>
+</arguments>
+<msg timestamp="20200809 23:11:22.190" level="INFO">Typing text 'Kaye' into text field 'xpath=//input[@name='first_name']'.</msg>
+<status status="PASS" starttime="20200809 23:11:22.189" endtime="20200809 23:11:22.282"></status>
+</kw>
+<status status="PASS" starttime="20200809 23:11:22.189" endtime="20200809 23:11:22.282"></status>
+</kw>
+<kw name="Run Keyword And Continue On Failure" library="BuiltIn">
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<arguments>
+<arg>Input Text</arg>
+<arg>${last_name_location}</arg>
+<arg>${singlerows[1]}</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${last_name_location}</arg>
+<arg>${singlerows[1]}</arg>
+</arguments>
+<msg timestamp="20200809 23:11:22.284" level="INFO">Typing text 'Joel' into text field 'xpath=//input[@name='last_name']'.</msg>
+<status status="PASS" starttime="20200809 23:11:22.283" endtime="20200809 23:11:22.392"></status>
+</kw>
+<status status="PASS" starttime="20200809 23:11:22.283" endtime="20200809 23:11:22.392"></status>
+</kw>
+<kw name="Run Keyword And Continue On Failure" library="BuiltIn">
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<arguments>
+<arg>Input Text</arg>
+<arg>${email1_location}</arg>
+<arg>${singlerows[2]}</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${email1_location}</arg>
+<arg>${singlerows[2]}</arg>
+</arguments>
+<msg timestamp="20200809 23:11:22.393" level="INFO">Typing text 'vitae@cursusluctusipsum.ca' into text field 'xpath=//input[@name='email']'.</msg>
+<status status="PASS" starttime="20200809 23:11:22.393" endtime="20200809 23:11:22.645"></status>
+</kw>
+<status status="PASS" starttime="20200809 23:11:22.392" endtime="20200809 23:11:22.645"></status>
+</kw>
+<kw name="Run Keyword And Continue On Failure" library="BuiltIn">
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<arguments>
+<arg>Input Text</arg>
+<arg>${email2_location}</arg>
+<arg>${singlerows[3]}</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${email2_location}</arg>
+<arg>${singlerows[3]}</arg>
+</arguments>
+<msg timestamp="20200809 23:11:22.646" level="INFO">Typing text 'vitae@cursusluctusipsum.ca' into text field 'xpath=//input[@name='confirmemail']'.</msg>
+<status status="PASS" starttime="20200809 23:11:22.646" endtime="20200809 23:11:22.867"></status>
+</kw>
+<status status="PASS" starttime="20200809 23:11:22.645" endtime="20200809 23:11:22.867"></status>
+</kw>
+<kw name="Run Keyword And Continue On Failure" library="BuiltIn">
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<arguments>
+<arg>Input Text</arg>
+<arg>${phone_location}</arg>
+<arg>${singlerows[4]}</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${phone_location}</arg>
+<arg>${singlerows[4]}</arg>
+</arguments>
+<msg timestamp="20200809 23:11:22.868" level="INFO">Typing text '773-872-0001' into text field 'xpath=//input[@name='phone']'.</msg>
+<status status="PASS" starttime="20200809 23:11:22.868" endtime="20200809 23:11:23.026"></status>
+</kw>
+<status status="PASS" starttime="20200809 23:11:22.867" endtime="20200809 23:11:23.026"></status>
+</kw>
+<kw name="Run Keyword And Continue On Failure" library="BuiltIn">
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<arguments>
+<arg>Click Element</arg>
+<arg>${booking_button}</arg>
+</arguments>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${booking_button}</arg>
+</arguments>
+<msg timestamp="20200809 23:11:23.027" level="INFO">Clicking element 'xpath=//button[@id='sub']'.</msg>
+<status status="PASS" starttime="20200809 23:11:23.026" endtime="20200809 23:11:23.706"></status>
+</kw>
+<status status="PASS" starttime="20200809 23:11:23.026" endtime="20200809 23:11:23.706"></status>
+</kw>
+<kw name="Run Keyword And Continue On Failure" library="BuiltIn">
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<arguments>
+<arg>Click Element</arg>
+<arg>${home_page_button}</arg>
+</arguments>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${home_page_button}</arg>
+</arguments>
+<msg timestamp="20200809 23:11:23.707" level="INFO">Clicking element 'css=.main-nav-menu &gt; .main-nav:nth-child(1) a'.</msg>
+<status status="PASS" starttime="20200809 23:11:23.706" endtime="20200809 23:11:23.786"></status>
+</kw>
+<status status="PASS" starttime="20200809 23:11:23.706" endtime="20200809 23:11:23.786"></status>
+</kw>
+<kw name="Visa Page" library="Trifecta_Keywords">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1s</arg>
+</arguments>
+<msg timestamp="20200809 23:11:24.788" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20200809 23:11:23.786" endtime="20200809 23:11:24.788"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${visa_button}</arg>
+</arguments>
+<msg timestamp="20200809 23:11:24.789" level="INFO">Clicking element 'css=.visa'.</msg>
+<status status="PASS" starttime="20200809 23:11:24.788" endtime="20200809 23:11:27.348"></status>
+</kw>
+<status status="PASS" starttime="20200809 23:11:23.786" endtime="20200809 23:11:27.348"></status>
+</kw>
+<kw name="Visa Selection" library="Trifecta_Keywords">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//div[@id='visa']/div/div/form/div/div/div/div/div[2]/div/a/div</arg>
+</arguments>
+<msg timestamp="20200809 23:11:27.349" level="INFO">Clicking element 'xpath=//div[@id='visa']/div/div/form/div/div/div/div/div[2]/div/a/div'.</msg>
+<status status="PASS" starttime="20200809 23:11:27.349" endtime="20200809 23:11:27.535"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//div[@id='visa']/div/div/form/div/div/div/div/div[2]/div/div/ul/li[21]</arg>
+</arguments>
+<msg timestamp="20200809 23:11:27.536" level="INFO">Clicking element 'xpath=//div[@id='visa']/div/div/form/div/div/div/div/div[2]/div/div/ul/li[21]'.</msg>
+<status status="PASS" starttime="20200809 23:11:27.535" endtime="20200809 23:11:27.697"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//div[@id='visa']/div/div/form/div/div/div[2]/div/div[2]/div/a/div</arg>
+</arguments>
+<msg timestamp="20200809 23:11:27.697" level="INFO">Clicking element 'xpath=//div[@id='visa']/div/div/form/div/div/div[2]/div/div[2]/div/a/div'.</msg>
+<status status="PASS" starttime="20200809 23:11:27.697" endtime="20200809 23:11:27.809"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//div[@id='visa']/div/div/form/div/div/div[2]/div/div[2]/div/div/ul/li[28]</arg>
+</arguments>
+<msg timestamp="20200809 23:11:27.809" level="INFO">Clicking element 'xpath=//div[@id='visa']/div/div/form/div/div/div[2]/div/div[2]/div/div/ul/li[28]'.</msg>
+<status status="PASS" starttime="20200809 23:11:27.809" endtime="20200809 23:11:27.889"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>500ms</arg>
+</arguments>
+<msg timestamp="20200809 23:11:28.390" level="INFO">Slept 500 milliseconds</msg>
+<status status="PASS" starttime="20200809 23:11:27.889" endtime="20200809 23:11:28.390"></status>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<doc>Simulates user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>None</arg>
+<arg>TAB</arg>
+</arguments>
+<msg timestamp="20200809 23:11:28.391" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg timestamp="20200809 23:11:28.392" level="INFO">Pressing special key TAB to browser.</msg>
+<status status="PASS" starttime="20200809 23:11:28.390" endtime="20200809 23:11:28.424"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>500ms</arg>
+</arguments>
+<msg timestamp="20200809 23:11:28.926" level="INFO">Slept 500 milliseconds</msg>
+<status status="PASS" starttime="20200809 23:11:28.424" endtime="20200809 23:11:28.926"></status>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<doc>Simulates user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>None</arg>
+<arg>ARROW_DOWN</arg>
+</arguments>
+<msg timestamp="20200809 23:11:28.927" level="INFO">Sending key(s) ('ARROW_DOWN',) to page.</msg>
+<msg timestamp="20200809 23:11:28.927" level="INFO">Pressing special key ARROW_DOWN to browser.</msg>
+<status status="PASS" starttime="20200809 23:11:28.926" endtime="20200809 23:11:28.948"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>300ms</arg>
+</arguments>
+<msg timestamp="20200809 23:11:29.250" level="INFO">Slept 300 milliseconds</msg>
+<status status="PASS" starttime="20200809 23:11:28.949" endtime="20200809 23:11:29.250"></status>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<doc>Simulates user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>None</arg>
+<arg>ENTER</arg>
+</arguments>
+<msg timestamp="20200809 23:11:29.251" level="INFO">Sending key(s) ('ENTER',) to page.</msg>
+<msg timestamp="20200809 23:11:29.251" level="INFO">Pressing special key ENTER to browser.</msg>
+<status status="PASS" starttime="20200809 23:11:29.250" endtime="20200809 23:11:29.276"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=(//button[@type='submit'])[7]</arg>
+</arguments>
+<msg timestamp="20200809 23:11:29.277" level="INFO">Clicking element 'xpath=(//button[@type='submit'])[7]'.</msg>
+<status status="PASS" starttime="20200809 23:11:29.277" endtime="20200809 23:11:29.646"></status>
+</kw>
+<status status="PASS" starttime="20200809 23:11:27.349" endtime="20200809 23:11:29.646"></status>
+</kw>
+<status status="PASS" starttime="20200809 23:11:22.188" endtime="20200809 23:11:29.646"></status>
+</kw>
+<kw name="${singlerows} = ['Hoyt', 'Savannah', 'Phasellus@sollicitudin.edu', 'Phasellus@sollicitudin.edu', '416-684-2323']" type="foritem">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${singlerows}</arg>
+</arguments>
+<msg timestamp="20200809 23:11:29.646" level="INFO">['Hoyt', 'Savannah', 'Phasellus@sollicitudin.edu', 'Phasellus@sollicitudin.edu', '416-684-2323']</msg>
+<status status="PASS" starttime="20200809 23:11:29.646" endtime="20200809 23:11:29.646"></status>
+</kw>
+<kw name="Run Keyword And Continue On Failure" library="BuiltIn">
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<arguments>
+<arg>Input Text</arg>
+<arg>${first_name_location}</arg>
+<arg>${singlerows[0]}</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${first_name_location}</arg>
+<arg>${singlerows[0]}</arg>
+</arguments>
+<msg timestamp="20200809 23:11:29.647" level="INFO">Typing text 'Hoyt' into text field 'xpath=//input[@name='first_name']'.</msg>
+<status status="PASS" starttime="20200809 23:11:29.647" endtime="20200809 23:11:29.755"></status>
+</kw>
+<status status="PASS" starttime="20200809 23:11:29.647" endtime="20200809 23:11:29.755"></status>
+</kw>
+<kw name="Run Keyword And Continue On Failure" library="BuiltIn">
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<arguments>
+<arg>Input Text</arg>
+<arg>${last_name_location}</arg>
+<arg>${singlerows[1]}</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${last_name_location}</arg>
+<arg>${singlerows[1]}</arg>
+</arguments>
+<msg timestamp="20200809 23:11:29.757" level="INFO">Typing text 'Savannah' into text field 'xpath=//input[@name='last_name']'.</msg>
+<status status="PASS" starttime="20200809 23:11:29.756" endtime="20200809 23:11:29.889"></status>
+</kw>
+<status status="PASS" starttime="20200809 23:11:29.755" endtime="20200809 23:11:29.889"></status>
+</kw>
+<kw name="Run Keyword And Continue On Failure" library="BuiltIn">
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<arguments>
+<arg>Input Text</arg>
+<arg>${email1_location}</arg>
+<arg>${singlerows[2]}</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${email1_location}</arg>
+<arg>${singlerows[2]}</arg>
+</arguments>
+<msg timestamp="20200809 23:11:29.890" level="INFO">Typing text 'Phasellus@sollicitudin.edu' into text field 'xpath=//input[@name='email']'.</msg>
+<status status="PASS" starttime="20200809 23:11:29.889" endtime="20200809 23:11:30.140"></status>
+</kw>
+<status status="PASS" starttime="20200809 23:11:29.889" endtime="20200809 23:11:30.140"></status>
+</kw>
+<kw name="Run Keyword And Continue On Failure" library="BuiltIn">
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<arguments>
+<arg>Input Text</arg>
+<arg>${email2_location}</arg>
+<arg>${singlerows[3]}</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${email2_location}</arg>
+<arg>${singlerows[3]}</arg>
+</arguments>
+<msg timestamp="20200809 23:11:30.141" level="INFO">Typing text 'Phasellus@sollicitudin.edu' into text field 'xpath=//input[@name='confirmemail']'.</msg>
+<status status="PASS" starttime="20200809 23:11:30.140" endtime="20200809 23:11:30.369"></status>
+</kw>
+<status status="PASS" starttime="20200809 23:11:30.140" endtime="20200809 23:11:30.370"></status>
+</kw>
+<kw name="Run Keyword And Continue On Failure" library="BuiltIn">
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<arguments>
+<arg>Input Text</arg>
+<arg>${phone_location}</arg>
+<arg>${singlerows[4]}</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${phone_location}</arg>
+<arg>${singlerows[4]}</arg>
+</arguments>
+<msg timestamp="20200809 23:11:30.370" level="INFO">Typing text '416-684-2323' into text field 'xpath=//input[@name='phone']'.</msg>
+<status status="PASS" starttime="20200809 23:11:30.370" endtime="20200809 23:11:30.520"></status>
+</kw>
+<status status="PASS" starttime="20200809 23:11:30.370" endtime="20200809 23:11:30.520"></status>
+</kw>
+<kw name="Run Keyword And Continue On Failure" library="BuiltIn">
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<arguments>
+<arg>Click Element</arg>
+<arg>${booking_button}</arg>
+</arguments>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${booking_button}</arg>
+</arguments>
+<msg timestamp="20200809 23:11:30.521" level="INFO">Clicking element 'xpath=//button[@id='sub']'.</msg>
+<status status="PASS" starttime="20200809 23:11:30.520" endtime="20200809 23:11:31.120"></status>
+</kw>
+<status status="PASS" starttime="20200809 23:11:30.520" endtime="20200809 23:11:31.120"></status>
+</kw>
+<kw name="Run Keyword And Continue On Failure" library="BuiltIn">
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<arguments>
+<arg>Click Element</arg>
+<arg>${home_page_button}</arg>
+</arguments>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${home_page_button}</arg>
+</arguments>
+<msg timestamp="20200809 23:11:31.121" level="INFO">Clicking element 'css=.main-nav-menu &gt; .main-nav:nth-child(1) a'.</msg>
+<status status="PASS" starttime="20200809 23:11:31.121" endtime="20200809 23:11:31.190"></status>
+</kw>
+<status status="PASS" starttime="20200809 23:11:31.120" endtime="20200809 23:11:31.190"></status>
+</kw>
+<kw name="Visa Page" library="Trifecta_Keywords">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1s</arg>
+</arguments>
+<msg timestamp="20200809 23:11:32.193" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20200809 23:11:31.191" endtime="20200809 23:11:32.193"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${visa_button}</arg>
+</arguments>
+<msg timestamp="20200809 23:11:32.194" level="INFO">Clicking element 'css=.visa'.</msg>
+<status status="PASS" starttime="20200809 23:11:32.193" endtime="20200809 23:11:33.677"></status>
+</kw>
+<status status="PASS" starttime="20200809 23:11:31.191" endtime="20200809 23:11:33.677"></status>
+</kw>
+<kw name="Visa Selection" library="Trifecta_Keywords">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//div[@id='visa']/div/div/form/div/div/div/div/div[2]/div/a/div</arg>
+</arguments>
+<msg timestamp="20200809 23:11:33.678" level="INFO">Clicking element 'xpath=//div[@id='visa']/div/div/form/div/div/div/div/div[2]/div/a/div'.</msg>
+<status status="PASS" starttime="20200809 23:11:33.678" endtime="20200809 23:11:33.891"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//div[@id='visa']/div/div/form/div/div/div/div/div[2]/div/div/ul/li[21]</arg>
+</arguments>
+<msg timestamp="20200809 23:11:33.892" level="INFO">Clicking element 'xpath=//div[@id='visa']/div/div/form/div/div/div/div/div[2]/div/div/ul/li[21]'.</msg>
+<status status="PASS" starttime="20200809 23:11:33.891" endtime="20200809 23:11:33.999"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//div[@id='visa']/div/div/form/div/div/div[2]/div/div[2]/div/a/div</arg>
+</arguments>
+<msg timestamp="20200809 23:11:34.000" level="INFO">Clicking element 'xpath=//div[@id='visa']/div/div/form/div/div/div[2]/div/div[2]/div/a/div'.</msg>
+<status status="PASS" starttime="20200809 23:11:33.999" endtime="20200809 23:11:34.107"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//div[@id='visa']/div/div/form/div/div/div[2]/div/div[2]/div/div/ul/li[28]</arg>
+</arguments>
+<msg timestamp="20200809 23:11:34.107" level="INFO">Clicking element 'xpath=//div[@id='visa']/div/div/form/div/div/div[2]/div/div[2]/div/div/ul/li[28]'.</msg>
+<status status="PASS" starttime="20200809 23:11:34.107" endtime="20200809 23:11:34.193"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>500ms</arg>
+</arguments>
+<msg timestamp="20200809 23:11:34.696" level="INFO">Slept 500 milliseconds</msg>
+<status status="PASS" starttime="20200809 23:11:34.194" endtime="20200809 23:11:34.696"></status>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<doc>Simulates user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>None</arg>
+<arg>TAB</arg>
+</arguments>
+<msg timestamp="20200809 23:11:34.697" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg timestamp="20200809 23:11:34.698" level="INFO">Pressing special key TAB to browser.</msg>
+<status status="PASS" starttime="20200809 23:11:34.696" endtime="20200809 23:11:34.727"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>500ms</arg>
+</arguments>
+<msg timestamp="20200809 23:11:35.228" level="INFO">Slept 500 milliseconds</msg>
+<status status="PASS" starttime="20200809 23:11:34.727" endtime="20200809 23:11:35.228"></status>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<doc>Simulates user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>None</arg>
+<arg>ARROW_DOWN</arg>
+</arguments>
+<msg timestamp="20200809 23:11:35.229" level="INFO">Sending key(s) ('ARROW_DOWN',) to page.</msg>
+<msg timestamp="20200809 23:11:35.229" level="INFO">Pressing special key ARROW_DOWN to browser.</msg>
+<status status="PASS" starttime="20200809 23:11:35.228" endtime="20200809 23:11:35.252"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>300ms</arg>
+</arguments>
+<msg timestamp="20200809 23:11:35.553" level="INFO">Slept 300 milliseconds</msg>
+<status status="PASS" starttime="20200809 23:11:35.252" endtime="20200809 23:11:35.553"></status>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<doc>Simulates user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>None</arg>
+<arg>ENTER</arg>
+</arguments>
+<msg timestamp="20200809 23:11:35.554" level="INFO">Sending key(s) ('ENTER',) to page.</msg>
+<msg timestamp="20200809 23:11:35.554" level="INFO">Pressing special key ENTER to browser.</msg>
+<status status="PASS" starttime="20200809 23:11:35.553" endtime="20200809 23:11:35.576"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=(//button[@type='submit'])[7]</arg>
+</arguments>
+<msg timestamp="20200809 23:11:35.576" level="INFO">Clicking element 'xpath=(//button[@type='submit'])[7]'.</msg>
+<status status="PASS" starttime="20200809 23:11:35.576" endtime="20200809 23:11:35.932"></status>
+</kw>
+<status status="PASS" starttime="20200809 23:11:33.678" endtime="20200809 23:11:35.932"></status>
+</kw>
+<status status="PASS" starttime="20200809 23:11:29.646" endtime="20200809 23:11:35.933"></status>
+</kw>
+<kw name="${singlerows} = ['Chava', 'Sybill', 'Duis.a.mi@consequat.co.uk', 'Duis.a.mi@consequat.co.uk', '563-999-0103']" type="foritem">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${singlerows}</arg>
+</arguments>
+<msg timestamp="20200809 23:11:35.933" level="INFO">['Chava', 'Sybill', 'Duis.a.mi@consequat.co.uk', 'Duis.a.mi@consequat.co.uk', '563-999-0103']</msg>
+<status status="PASS" starttime="20200809 23:11:35.933" endtime="20200809 23:11:35.934"></status>
+</kw>
+<kw name="Run Keyword And Continue On Failure" library="BuiltIn">
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<arguments>
+<arg>Input Text</arg>
+<arg>${first_name_location}</arg>
+<arg>${singlerows[0]}</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${first_name_location}</arg>
+<arg>${singlerows[0]}</arg>
+</arguments>
+<msg timestamp="20200809 23:11:35.935" level="INFO">Typing text 'Chava' into text field 'xpath=//input[@name='first_name']'.</msg>
+<status status="PASS" starttime="20200809 23:11:35.934" endtime="20200809 23:11:36.046"></status>
+</kw>
+<status status="PASS" starttime="20200809 23:11:35.934" endtime="20200809 23:11:36.047"></status>
+</kw>
+<kw name="Run Keyword And Continue On Failure" library="BuiltIn">
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<arguments>
+<arg>Input Text</arg>
+<arg>${last_name_location}</arg>
+<arg>${singlerows[1]}</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${last_name_location}</arg>
+<arg>${singlerows[1]}</arg>
+</arguments>
+<msg timestamp="20200809 23:11:36.048" level="INFO">Typing text 'Sybill' into text field 'xpath=//input[@name='last_name']'.</msg>
+<status status="PASS" starttime="20200809 23:11:36.047" endtime="20200809 23:11:36.178"></status>
+</kw>
+<status status="PASS" starttime="20200809 23:11:36.047" endtime="20200809 23:11:36.178"></status>
+</kw>
+<kw name="Run Keyword And Continue On Failure" library="BuiltIn">
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<arguments>
+<arg>Input Text</arg>
+<arg>${email1_location}</arg>
+<arg>${singlerows[2]}</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${email1_location}</arg>
+<arg>${singlerows[2]}</arg>
+</arguments>
+<msg timestamp="20200809 23:11:36.179" level="INFO">Typing text 'Duis.a.mi@consequat.co.uk' into text field 'xpath=//input[@name='email']'.</msg>
+<status status="PASS" starttime="20200809 23:11:36.178" endtime="20200809 23:11:36.405"></status>
+</kw>
+<status status="PASS" starttime="20200809 23:11:36.178" endtime="20200809 23:11:36.405"></status>
+</kw>
+<kw name="Run Keyword And Continue On Failure" library="BuiltIn">
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<arguments>
+<arg>Input Text</arg>
+<arg>${email2_location}</arg>
+<arg>${singlerows[3]}</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${email2_location}</arg>
+<arg>${singlerows[3]}</arg>
+</arguments>
+<msg timestamp="20200809 23:11:36.406" level="INFO">Typing text 'Duis.a.mi@consequat.co.uk' into text field 'xpath=//input[@name='confirmemail']'.</msg>
+<status status="PASS" starttime="20200809 23:11:36.406" endtime="20200809 23:11:36.641"></status>
+</kw>
+<status status="PASS" starttime="20200809 23:11:36.406" endtime="20200809 23:11:36.641"></status>
+</kw>
+<kw name="Run Keyword And Continue On Failure" library="BuiltIn">
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<arguments>
+<arg>Input Text</arg>
+<arg>${phone_location}</arg>
+<arg>${singlerows[4]}</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${phone_location}</arg>
+<arg>${singlerows[4]}</arg>
+</arguments>
+<msg timestamp="20200809 23:11:36.641" level="INFO">Typing text '563-999-0103' into text field 'xpath=//input[@name='phone']'.</msg>
+<status status="PASS" starttime="20200809 23:11:36.641" endtime="20200809 23:11:36.804"></status>
+</kw>
+<status status="PASS" starttime="20200809 23:11:36.641" endtime="20200809 23:11:36.805"></status>
+</kw>
+<kw name="Run Keyword And Continue On Failure" library="BuiltIn">
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<arguments>
+<arg>Click Element</arg>
+<arg>${booking_button}</arg>
+</arguments>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${booking_button}</arg>
+</arguments>
+<msg timestamp="20200809 23:11:36.805" level="INFO">Clicking element 'xpath=//button[@id='sub']'.</msg>
+<status status="PASS" starttime="20200809 23:11:36.805" endtime="20200809 23:11:37.437"></status>
+</kw>
+<status status="PASS" starttime="20200809 23:11:36.805" endtime="20200809 23:11:37.437"></status>
+</kw>
+<kw name="Run Keyword And Continue On Failure" library="BuiltIn">
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<arguments>
+<arg>Click Element</arg>
+<arg>${home_page_button}</arg>
+</arguments>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${home_page_button}</arg>
+</arguments>
+<msg timestamp="20200809 23:11:37.438" level="INFO">Clicking element 'css=.main-nav-menu &gt; .main-nav:nth-child(1) a'.</msg>
+<status status="PASS" starttime="20200809 23:11:37.438" endtime="20200809 23:11:37.516"></status>
+</kw>
+<status status="PASS" starttime="20200809 23:11:37.437" endtime="20200809 23:11:37.516"></status>
+</kw>
+<kw name="Visa Page" library="Trifecta_Keywords">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1s</arg>
+</arguments>
+<msg timestamp="20200809 23:11:38.517" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20200809 23:11:37.516" endtime="20200809 23:11:38.517"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${visa_button}</arg>
+</arguments>
+<msg timestamp="20200809 23:11:38.518" level="INFO">Clicking element 'css=.visa'.</msg>
+<status status="PASS" starttime="20200809 23:11:38.518" endtime="20200809 23:11:41.148"></status>
+</kw>
+<status status="PASS" starttime="20200809 23:11:37.516" endtime="20200809 23:11:41.149"></status>
+</kw>
+<kw name="Visa Selection" library="Trifecta_Keywords">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//div[@id='visa']/div/div/form/div/div/div/div/div[2]/div/a/div</arg>
+</arguments>
+<msg timestamp="20200809 23:11:41.150" level="INFO">Clicking element 'xpath=//div[@id='visa']/div/div/form/div/div/div/div/div[2]/div/a/div'.</msg>
+<status status="PASS" starttime="20200809 23:11:41.149" endtime="20200809 23:11:41.398"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//div[@id='visa']/div/div/form/div/div/div/div/div[2]/div/div/ul/li[21]</arg>
+</arguments>
+<msg timestamp="20200809 23:11:41.398" level="INFO">Clicking element 'xpath=//div[@id='visa']/div/div/form/div/div/div/div/div[2]/div/div/ul/li[21]'.</msg>
+<status status="PASS" starttime="20200809 23:11:41.398" endtime="20200809 23:11:41.485"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//div[@id='visa']/div/div/form/div/div/div[2]/div/div[2]/div/a/div</arg>
+</arguments>
+<msg timestamp="20200809 23:11:41.486" level="INFO">Clicking element 'xpath=//div[@id='visa']/div/div/form/div/div/div[2]/div/div[2]/div/a/div'.</msg>
+<status status="PASS" starttime="20200809 23:11:41.486" endtime="20200809 23:11:41.593"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//div[@id='visa']/div/div/form/div/div/div[2]/div/div[2]/div/div/ul/li[28]</arg>
+</arguments>
+<msg timestamp="20200809 23:11:41.593" level="INFO">Clicking element 'xpath=//div[@id='visa']/div/div/form/div/div/div[2]/div/div[2]/div/div/ul/li[28]'.</msg>
+<status status="PASS" starttime="20200809 23:11:41.593" endtime="20200809 23:11:41.672"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>500ms</arg>
+</arguments>
+<msg timestamp="20200809 23:11:42.173" level="INFO">Slept 500 milliseconds</msg>
+<status status="PASS" starttime="20200809 23:11:41.672" endtime="20200809 23:11:42.173"></status>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<doc>Simulates user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>None</arg>
+<arg>TAB</arg>
+</arguments>
+<msg timestamp="20200809 23:11:42.174" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg timestamp="20200809 23:11:42.174" level="INFO">Pressing special key TAB to browser.</msg>
+<status status="PASS" starttime="20200809 23:11:42.173" endtime="20200809 23:11:42.203"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>500ms</arg>
+</arguments>
+<msg timestamp="20200809 23:11:42.704" level="INFO">Slept 500 milliseconds</msg>
+<status status="PASS" starttime="20200809 23:11:42.203" endtime="20200809 23:11:42.704"></status>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<doc>Simulates user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>None</arg>
+<arg>ARROW_DOWN</arg>
+</arguments>
+<msg timestamp="20200809 23:11:42.705" level="INFO">Sending key(s) ('ARROW_DOWN',) to page.</msg>
+<msg timestamp="20200809 23:11:42.705" level="INFO">Pressing special key ARROW_DOWN to browser.</msg>
+<status status="PASS" starttime="20200809 23:11:42.704" endtime="20200809 23:11:42.732"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>300ms</arg>
+</arguments>
+<msg timestamp="20200809 23:11:43.034" level="INFO">Slept 300 milliseconds</msg>
+<status status="PASS" starttime="20200809 23:11:42.732" endtime="20200809 23:11:43.034"></status>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<doc>Simulates user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>None</arg>
+<arg>ENTER</arg>
+</arguments>
+<msg timestamp="20200809 23:11:43.036" level="INFO">Sending key(s) ('ENTER',) to page.</msg>
+<msg timestamp="20200809 23:11:43.036" level="INFO">Pressing special key ENTER to browser.</msg>
+<status status="PASS" starttime="20200809 23:11:43.035" endtime="20200809 23:11:43.061"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=(//button[@type='submit'])[7]</arg>
+</arguments>
+<msg timestamp="20200809 23:11:43.062" level="INFO">Clicking element 'xpath=(//button[@type='submit'])[7]'.</msg>
+<status status="PASS" starttime="20200809 23:11:43.062" endtime="20200809 23:11:43.405"></status>
+</kw>
+<status status="PASS" starttime="20200809 23:11:41.149" endtime="20200809 23:11:43.405"></status>
+</kw>
+<status status="PASS" starttime="20200809 23:11:35.933" endtime="20200809 23:11:43.405"></status>
+</kw>
+<kw name="${singlerows} = ['Ferdinand', 'Jessica', 'gravida.sit.amet@elementum.co.uk', 'gravida.sit.amet@elementum.co.uk', '310-987-6789']" type="foritem">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${singlerows}</arg>
+</arguments>
+<msg timestamp="20200809 23:11:43.406" level="INFO">['Ferdinand', 'Jessica', 'gravida.sit.amet@elementum.co.uk', 'gravida.sit.amet@elementum.co.uk', '310-987-6789']</msg>
+<status status="PASS" starttime="20200809 23:11:43.405" endtime="20200809 23:11:43.406"></status>
+</kw>
+<kw name="Run Keyword And Continue On Failure" library="BuiltIn">
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<arguments>
+<arg>Input Text</arg>
+<arg>${first_name_location}</arg>
+<arg>${singlerows[0]}</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${first_name_location}</arg>
+<arg>${singlerows[0]}</arg>
+</arguments>
+<msg timestamp="20200809 23:11:43.407" level="INFO">Typing text 'Ferdinand' into text field 'xpath=//input[@name='first_name']'.</msg>
+<status status="PASS" starttime="20200809 23:11:43.406" endtime="20200809 23:11:43.529"></status>
+</kw>
+<status status="PASS" starttime="20200809 23:11:43.406" endtime="20200809 23:11:43.529"></status>
+</kw>
+<kw name="Run Keyword And Continue On Failure" library="BuiltIn">
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<arguments>
+<arg>Input Text</arg>
+<arg>${last_name_location}</arg>
+<arg>${singlerows[1]}</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${last_name_location}</arg>
+<arg>${singlerows[1]}</arg>
+</arguments>
+<msg timestamp="20200809 23:11:43.530" level="INFO">Typing text 'Jessica' into text field 'xpath=//input[@name='last_name']'.</msg>
+<status status="PASS" starttime="20200809 23:11:43.529" endtime="20200809 23:11:43.651"></status>
+</kw>
+<status status="PASS" starttime="20200809 23:11:43.529" endtime="20200809 23:11:43.651"></status>
+</kw>
+<kw name="Run Keyword And Continue On Failure" library="BuiltIn">
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<arguments>
+<arg>Input Text</arg>
+<arg>${email1_location}</arg>
+<arg>${singlerows[2]}</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${email1_location}</arg>
+<arg>${singlerows[2]}</arg>
+</arguments>
+<msg timestamp="20200809 23:11:43.652" level="INFO">Typing text 'gravida.sit.amet@elementum.co.uk' into text field 'xpath=//input[@name='email']'.</msg>
+<status status="PASS" starttime="20200809 23:11:43.651" endtime="20200809 23:11:43.948"></status>
+</kw>
+<status status="PASS" starttime="20200809 23:11:43.651" endtime="20200809 23:11:43.948"></status>
+</kw>
+<kw name="Run Keyword And Continue On Failure" library="BuiltIn">
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<arguments>
+<arg>Input Text</arg>
+<arg>${email2_location}</arg>
+<arg>${singlerows[3]}</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${email2_location}</arg>
+<arg>${singlerows[3]}</arg>
+</arguments>
+<msg timestamp="20200809 23:11:43.950" level="INFO">Typing text 'gravida.sit.amet@elementum.co.uk' into text field 'xpath=//input[@name='confirmemail']'.</msg>
+<status status="PASS" starttime="20200809 23:11:43.949" endtime="20200809 23:11:44.187"></status>
+</kw>
+<status status="PASS" starttime="20200809 23:11:43.949" endtime="20200809 23:11:44.187"></status>
+</kw>
+<kw name="Run Keyword And Continue On Failure" library="BuiltIn">
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<arguments>
+<arg>Input Text</arg>
+<arg>${phone_location}</arg>
+<arg>${singlerows[4]}</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${phone_location}</arg>
+<arg>${singlerows[4]}</arg>
+</arguments>
+<msg timestamp="20200809 23:11:44.189" level="INFO">Typing text '310-987-6789' into text field 'xpath=//input[@name='phone']'.</msg>
+<status status="PASS" starttime="20200809 23:11:44.188" endtime="20200809 23:11:44.330"></status>
+</kw>
+<status status="PASS" starttime="20200809 23:11:44.188" endtime="20200809 23:11:44.330"></status>
+</kw>
+<kw name="Run Keyword And Continue On Failure" library="BuiltIn">
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<arguments>
+<arg>Click Element</arg>
+<arg>${booking_button}</arg>
+</arguments>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${booking_button}</arg>
+</arguments>
+<msg timestamp="20200809 23:11:44.331" level="INFO">Clicking element 'xpath=//button[@id='sub']'.</msg>
+<status status="PASS" starttime="20200809 23:11:44.331" endtime="20200809 23:11:44.936"></status>
+</kw>
+<status status="PASS" starttime="20200809 23:11:44.330" endtime="20200809 23:11:44.936"></status>
+</kw>
+<kw name="Run Keyword And Continue On Failure" library="BuiltIn">
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<arguments>
+<arg>Click Element</arg>
+<arg>${home_page_button}</arg>
+</arguments>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${home_page_button}</arg>
+</arguments>
+<msg timestamp="20200809 23:11:44.937" level="INFO">Clicking element 'css=.main-nav-menu &gt; .main-nav:nth-child(1) a'.</msg>
+<status status="PASS" starttime="20200809 23:11:44.937" endtime="20200809 23:11:45.024"></status>
+</kw>
+<status status="PASS" starttime="20200809 23:11:44.936" endtime="20200809 23:11:45.024"></status>
+</kw>
+<kw name="Visa Page" library="Trifecta_Keywords">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1s</arg>
+</arguments>
+<msg timestamp="20200809 23:11:46.027" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20200809 23:11:45.024" endtime="20200809 23:11:46.027"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${visa_button}</arg>
+</arguments>
+<msg timestamp="20200809 23:11:46.028" level="INFO">Clicking element 'css=.visa'.</msg>
+<status status="PASS" starttime="20200809 23:11:46.028" endtime="20200809 23:11:47.454"></status>
+</kw>
+<status status="PASS" starttime="20200809 23:11:45.024" endtime="20200809 23:11:47.454"></status>
+</kw>
+<kw name="Visa Selection" library="Trifecta_Keywords">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//div[@id='visa']/div/div/form/div/div/div/div/div[2]/div/a/div</arg>
+</arguments>
+<msg timestamp="20200809 23:11:47.455" level="INFO">Clicking element 'xpath=//div[@id='visa']/div/div/form/div/div/div/div/div[2]/div/a/div'.</msg>
+<status status="PASS" starttime="20200809 23:11:47.455" endtime="20200809 23:11:47.658"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//div[@id='visa']/div/div/form/div/div/div/div/div[2]/div/div/ul/li[21]</arg>
+</arguments>
+<msg timestamp="20200809 23:11:47.659" level="INFO">Clicking element 'xpath=//div[@id='visa']/div/div/form/div/div/div/div/div[2]/div/div/ul/li[21]'.</msg>
+<status status="PASS" starttime="20200809 23:11:47.658" endtime="20200809 23:11:47.780"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//div[@id='visa']/div/div/form/div/div/div[2]/div/div[2]/div/a/div</arg>
+</arguments>
+<msg timestamp="20200809 23:11:47.780" level="INFO">Clicking element 'xpath=//div[@id='visa']/div/div/form/div/div/div[2]/div/div[2]/div/a/div'.</msg>
+<status status="PASS" starttime="20200809 23:11:47.780" endtime="20200809 23:11:47.898"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//div[@id='visa']/div/div/form/div/div/div[2]/div/div[2]/div/div/ul/li[28]</arg>
+</arguments>
+<msg timestamp="20200809 23:11:47.899" level="INFO">Clicking element 'xpath=//div[@id='visa']/div/div/form/div/div/div[2]/div/div[2]/div/div/ul/li[28]'.</msg>
+<status status="PASS" starttime="20200809 23:11:47.898" endtime="20200809 23:11:47.973"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>500ms</arg>
+</arguments>
+<msg timestamp="20200809 23:11:48.475" level="INFO">Slept 500 milliseconds</msg>
+<status status="PASS" starttime="20200809 23:11:47.973" endtime="20200809 23:11:48.475"></status>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<doc>Simulates user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>None</arg>
+<arg>TAB</arg>
+</arguments>
+<msg timestamp="20200809 23:11:48.476" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg timestamp="20200809 23:11:48.476" level="INFO">Pressing special key TAB to browser.</msg>
+<status status="PASS" starttime="20200809 23:11:48.475" endtime="20200809 23:11:48.502"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>500ms</arg>
+</arguments>
+<msg timestamp="20200809 23:11:49.003" level="INFO">Slept 500 milliseconds</msg>
+<status status="PASS" starttime="20200809 23:11:48.502" endtime="20200809 23:11:49.003"></status>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<doc>Simulates user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>None</arg>
+<arg>ARROW_DOWN</arg>
+</arguments>
+<msg timestamp="20200809 23:11:49.005" level="INFO">Sending key(s) ('ARROW_DOWN',) to page.</msg>
+<msg timestamp="20200809 23:11:49.005" level="INFO">Pressing special key ARROW_DOWN to browser.</msg>
+<status status="PASS" starttime="20200809 23:11:49.004" endtime="20200809 23:11:49.042"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>300ms</arg>
+</arguments>
+<msg timestamp="20200809 23:11:49.343" level="INFO">Slept 300 milliseconds</msg>
+<status status="PASS" starttime="20200809 23:11:49.042" endtime="20200809 23:11:49.343"></status>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<doc>Simulates user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>None</arg>
+<arg>ENTER</arg>
+</arguments>
+<msg timestamp="20200809 23:11:49.345" level="INFO">Sending key(s) ('ENTER',) to page.</msg>
+<msg timestamp="20200809 23:11:49.345" level="INFO">Pressing special key ENTER to browser.</msg>
+<status status="PASS" starttime="20200809 23:11:49.343" endtime="20200809 23:11:49.380"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=(//button[@type='submit'])[7]</arg>
+</arguments>
+<msg timestamp="20200809 23:11:49.380" level="INFO">Clicking element 'xpath=(//button[@type='submit'])[7]'.</msg>
+<status status="PASS" starttime="20200809 23:11:49.380" endtime="20200809 23:11:49.735"></status>
+</kw>
+<status status="PASS" starttime="20200809 23:11:47.454" endtime="20200809 23:11:49.735"></status>
+</kw>
+<status status="PASS" starttime="20200809 23:11:43.405" endtime="20200809 23:11:49.735"></status>
+</kw>
+<status status="PASS" starttime="20200809 23:10:49.398" endtime="20200809 23:11:49.735"></status>
+</kw>
+<status status="PASS" starttime="20200809 23:10:47.395" endtime="20200809 23:11:49.736"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="teardown">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20200809 23:11:49.736" endtime="20200809 23:11:51.908"></status>
+</kw>
+<tags>
+<tag>Regression</tag>
+</tags>
+<status status="PASS" starttime="20200809 23:10:34.079" endtime="20200809 23:11:51.909" critical="yes"></status>
+</test>
+<doc>Suite description</doc>
+<status status="PASS" starttime="20200809 23:09:56.448" endtime="20200809 23:11:51.912"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0">Critical Tests</stat>
+<stat pass="2" fail="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="2" fail="0">Regression</stat>
+</tag>
+<suite>
+<stat pass="2" fail="0" id="s1" name="TF0001">TF0001</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
